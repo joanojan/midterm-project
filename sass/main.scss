@@ -1,11 +1,42 @@
-//COLOR STYLES
-$yellow: #FFC600;
-$intenseBlue: #072ac8;
-$blue: #43d2ff;
-$grayBlue: #a2d6f9;
-$lightBlue: #d1edff;
-$darkGray: #292e47;
-$gray: #6b708d;
-$white: #f2f4fc;
-$lightBlueGray: #ecf7ff;
+@use 'base';
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: base.$background;
+    max-width: 1440px;
+
+    #header {
+        display:flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 122px;
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 76%;
+            height: 52px;
+
+            #menu {
+                display: flex;
+                justify-content: space-between;
+                min-width: 35%;
+
+                a {
+                    @include base.link;
+                }
+            }
+
+            #contact {
+                @include base.button;
+                width: 150px;
+            }
+        }
+    }
+}

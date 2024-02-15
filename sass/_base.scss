@@ -1,0 +1,24 @@
+//COLOR STYLES
+$yellow: #FFC600;
+$intenseBlue: #072ac8;
+$blue: #43d2ff;
+$grayBlue: #a2d6f9;
+$lightBlue: #d1edff;
+$darkGray: #292e47;
+$gray: #6b708d;
+$background: #f2f4fc;
+$lightBlueGray: #ecf7ff;
+
+@mixin button {
+    background-color: $intenseBlue;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin link {
+    color: $intenseBlue;
+    text-decoration: none;
+}
