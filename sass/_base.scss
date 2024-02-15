@@ -1,5 +1,5 @@
 //COLOR STYLES
-$yellow: #FFC600;
+$yellow: #ffc600;
 $intenseBlue: #072ac8;
 $blue: #43d2ff;
 $grayBlue: #a2d6f9;
@@ -10,15 +10,17 @@ $background: #f2f4fc;
 $lightBlueGray: #ecf7ff;
 
 @mixin button {
-    background-color: $intenseBlue;
-    color: white;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: $intenseBlue;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+//TO-DO: the link should be grey, and only blue when clicked?
+//But the thing is that only applies to the header, not elsewhere!
 @mixin link {
-    color: $intenseBlue;
-    text-decoration: none;
+  color: $intenseBlue;
+  text-decoration: none;
 }
