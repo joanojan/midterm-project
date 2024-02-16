@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 242px;
+  border: 6px solid gray;
+}
+
+/*# sourceMappingURL=footer.css.map */
