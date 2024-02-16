@@ -21,6 +21,12 @@ $lightBlueGray: #ecf7ff;
 //TO-DO: the link should be grey, and only blue when clicked?
 //But the thing is that only applies to the header, not elsewhere!
 @mixin link {
-  color: $intenseBlue;
+  color: $darkGray;
   text-decoration: none;
+}
+
+@mixin flex-center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
