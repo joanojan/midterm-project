@@ -1,32 +1,36 @@
-@use 'base';
+@use "base";
 
-#header {
-    display:flex;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 122px;
+.header {
+  position:fixed;
+  @include base.flex-center;
+  align-items: end;
+  width: 100%;
+  height: 122px;
+  background-color: base.$background;
+  border: solid yellow 2px;
 
-    #navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 76%;
-        height: 52px;
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 76%;
+    height: 52px;
 
-        #menu {
-            display: flex;
-            justify-content: space-between;
-            min-width: 35%;
-
-            a {
-                @include base.link;
-            }
+    .menu {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      min-width: 35%;
+      li {
+        a {
+          @include base.link;
         }
-
-        #contact {
-            @include base.button;
-            width: 150px;
-        }
+      }
     }
+
+    #contact {
+      @include base.button;
+      width: 150px;
+    }
+  }
 }
