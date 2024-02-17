@@ -1,14 +1,11 @@
 @use 'base';
 
 * {
-    box-sizing: border-box;
     font-size: 10px;
 }
 
 body {
-    margin: auto;
     background-color: base.$light;
     max-width: 1440px;
-    border: 14px solid purple;
     font-family: "Roboto", sans-serif;
 }

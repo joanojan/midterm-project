@@ -1,13 +1,10 @@
 * {
-  box-sizing: border-box;
   font-size: 10px;
 }
 
 body {
-  margin: auto;
-  background-color: #f2f4fc;
+  background-color: #f4f6fc;
   max-width: 1440px;
-  border: 14px solid purple;
   font-family: "Roboto", sans-serif;
 }
 

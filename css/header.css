@@ -1,13 +1,14 @@
 .header {
   position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: end;
   width: 144rem;
   height: 122px;
-  background-color: #f2f4fc;
-  border: solid yellow 2px;
+  background-color: #f4f6fc;
+  border: solid rgb(255, 153, 0) 2px;
 }
 .header #navbar {
   display: flex;
