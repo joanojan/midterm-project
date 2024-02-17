@@ -4,11 +4,11 @@
 }
 
 body {
-  height: 100vh;
   margin: auto;
   background-color: #f2f4fc;
   max-width: 1440px;
-  border: 4px solid purple;
+  border: 14px solid purple;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
