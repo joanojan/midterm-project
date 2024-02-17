@@ -30,20 +30,20 @@
         height: 24rem;
       }
 
-      .project-ref {
+      .project-text {
 
         .project-title {
-          @include base.medium;
+          @include base.font-medium;
           margin: 3rem 0 0.8rem 3rem;
         }
         .project-subject {
           margin: 0 0 5.4rem 3rem;
-          @include base.regular;
+          @include base.font-regular;
         }
 
         .project-learn-more {
           margin: 0 0 3rem 3rem;
-          @include base.regular(base.$default);
+          @include base.font-regular(base.$default);
           text-decoration: none;
         }
       }

@@ -11,17 +11,24 @@ $light: #f4f6fc;
 $light-blue: #ecf7ff;
 
 //FONT Styles
-@mixin medium ($color: $dark) {
+@mixin font-medium ($color: $dark) {
   font-size: 2.4rem;
   color: $color;
   line-height: auto;
   letter-spacing: 0;
 }
 
-@mixin regular ($color: $medium) {
+@mixin font-regular ($color: $medium) {
   font-size: 1.7rem;
   color: $color;
   line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin font-header-link ($color: $medium) {
+  font-size: 1.7rem;
+  color: $color;
+  line-height: 130%;
   letter-spacing: 0;
 }
 
@@ -41,16 +48,15 @@ $light-blue: #ecf7ff;
   justify-content: center;
 }
 
-//TO-DO: the link should be grey, and only blue when clicked?
-//But the thing is that only applies to the header, not elsewhere!
-@mixin link {
-  color: $dark;
-  text-decoration: none;
-}
-
 //common flex display
 @mixin flex-center {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+//anchor tags in the footer and header
+@mixin anchor {
+  text-decoration: none;
+  @include font-header-link();
 }

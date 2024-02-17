@@ -8,7 +8,6 @@
   width: 144rem;
   height: 122px;
   background-color: #f4f6fc;
-  border: solid rgb(255, 153, 0) 2px;
 }
 .header #navbar {
   display: flex;
@@ -17,17 +16,24 @@
   min-width: 76%;
   height: 52px;
 }
-.header #navbar .menu {
+.header #navbar .navbar-ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   min-width: 35%;
 }
-.header #navbar .menu li a {
-  color: #292e47;
+.header #navbar .navbar-ul .navbar-li .navbar-a {
   text-decoration: none;
+  font-size: 1.7rem;
+  color: #6b708d;
+  line-height: 130%;
+  letter-spacing: 0;
 }
 .header #navbar #contact {
+  font-size: 1.7rem;
+  color: #6b708d;
+  line-height: 130%;
+  letter-spacing: 0;
   background-color: #072ac8;
   color: white;
   height: 100%;
@@ -37,4 +43,4 @@
   width: 150px;
 }
 
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=navbar.css.map */

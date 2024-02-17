@@ -3,6 +3,7 @@
 }
 
 body {
+  margin: auto;
   background-color: #f4f6fc;
   max-width: 1440px;
   font-family: "Roboto", sans-serif;

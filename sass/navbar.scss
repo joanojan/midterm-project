@@ -8,7 +8,6 @@
   width: 144rem;
   height: 122px;
   background-color: base.$light;
-  border: solid rgb(255, 153, 0) 2px;
 
   #navbar {
     display: flex;
@@ -17,19 +16,20 @@
     min-width: 76%;
     height: 52px;
 
-    .menu {
+    .navbar-ul {
       display: flex;
       list-style: none;
       justify-content: space-between;
       min-width: 35%;
-      li {
-        a {
-          @include base.link;
+      .navbar-li {
+        .navbar-a {
+          @include base.anchor;
         }
       }
     }
-
+    
     #contact {
+      @include base.font-header-link;
       @include base.button;
       width: 150px;
     }

@@ -18,22 +18,26 @@
       justify-content: space-between;
       align-items: start;
       height: 100%;
+
+      .address {
+        @include base.font-regular;
+      }
     }
 
     #footer-logo {
       height: 30px;
     }
 
-    .footer-links {
+    .footer-ul {
       display: flex;
       justify-content: space-between;
       list-style: none;
       width: 435px;
       height: 100%;
 
-      li {
-        a {
-          @include base.link;
+      .footer-li {
+        .footer-a {
+          @include base.anchor;
         }
         width: 100%;
         display: flex;

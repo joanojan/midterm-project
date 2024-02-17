@@ -28,21 +28,21 @@
   width: 34rem;
   height: 24rem;
 }
-.projects .projects-container .projects-ul .project-ref .project-title {
+.projects .projects-container .projects-ul .project-text .project-title {
   font-size: 2.4rem;
   color: #292e47;
   line-height: auto;
   letter-spacing: 0;
   margin: 3rem 0 0.8rem 3rem;
 }
-.projects .projects-container .projects-ul .project-ref .project-subject {
+.projects .projects-container .projects-ul .project-text .project-subject {
   margin: 0 0 5.4rem 3rem;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 150%;
   letter-spacing: 0;
 }
-.projects .projects-container .projects-ul .project-ref .project-learn-more {
+.projects .projects-container .projects-ul .project-text .project-learn-more {
   margin: 0 0 3rem 3rem;
   font-size: 1.7rem;
   color: #072ac8;
