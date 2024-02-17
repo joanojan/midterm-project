@@ -1,11 +1,13 @@
 @use "base";
 
 .header {
+  position:fixed;
   @include base.flex-center;
   align-items: end;
   width: 100%;
   height: 122px;
   background-color: base.$background;
+  border: solid yellow 2px;
 
   #navbar {
     display: flex;
