@@ -4,9 +4,9 @@
   position:fixed;
   @include base.flex-center;
   align-items: end;
-  width: 100%;
+  width: 144rem;
   height: 122px;
-  background-color: base.$background;
+  background-color: base.$light;
   border: solid yellow 2px;
 
   #navbar {

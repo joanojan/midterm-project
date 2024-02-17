@@ -1,0 +1,55 @@
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  width: 100%;
+  height: 561px;
+  border: 13px solid burlywood;
+  margin-top: 10rem;
+  border: 6px solid red;
+  margin-top: 200px;
+}
+.projects .projects-container {
+  border: 4px solid blue;
+  width: 110rem;
+}
+.projects .projects-container .projects-title {
+  border: 3px solid green;
+  font-weight: bold;
+  font-size: 40px;
+}
+.projects .projects-container .projects-ul {
+  padding: 0;
+  border: 6px solid darkcyan;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.projects .projects-container .projects-ul .project-img {
+  width: 34rem;
+  height: 24rem;
+}
+.projects .projects-container .projects-ul .project-ref .project-title {
+  font-size: 2.4rem;
+  color: #292e47;
+  line-height: auto;
+  letter-spacing: 0;
+  margin: 3rem 0 0.8rem 3rem;
+}
+.projects .projects-container .projects-ul .project-ref .project-subject {
+  margin: 0 0 5.4rem 3rem;
+  font-size: 1.7rem;
+  color: #6b708d;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.projects .projects-container .projects-ul .project-ref .project-learn-more {
+  margin: 0 0 3rem 3rem;
+  font-size: 1.7rem;
+  color: #072ac8;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=projects.css.map */
