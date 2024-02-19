@@ -1,12 +1,119 @@
-@use 'base';
+@use "base";
 
 * {
-    font-size: 10px;
+  font-size: 10px;
+  margin: auto; //keeps the content in centered
 }
 
 body {
-    margin: auto; //keeps the content in centered
-    background-color: base.$light;
-    max-width: 1440px;
-    font-family: "Roboto", sans-serif;
+  background-color: base.$light;
+  max-width: 1440px;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero-section {
+  margin-top: 122px;
+  margin-right: 0;
+  width: 140rem;
+  height: 65rem;
+
+  //The text-content
+  #hero-section-container {
+    width: 110rem;
+    height: 100%;
+    margin-left: 17rem;
+    display: flex;
+
+    #hero-article {
+      width: 53rem;
+      height: 42.2rem;
+      margin: 10.9rem 0 11.9rem 0;
+
+      #hero-article-title {
+        @include base.heading(base.$hOne);
+        margin-bottom: 3rem;
+      }
+
+      #hero-article-paragraph {
+        margin: 0;
+        width: 43.5rem;
+        @include base.font-regular(base.$medium, base.$body-regular);
+      }
+
+      #hero-article-contact-links {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 4rem;
+
+        #hero-article-button {
+          @include base.font-header-link;
+          @include base.button;
+          width: 150px;
+          height: 5.2rem;
+          margin-right: 4rem;
+          margin-left: 0;
+        }
+  
+        #hero-link-works {
+          margin: 0;
+          align-self: center;
+          @include base.font-header-link;
+          @include base.font-regular;
+          line-height: 130%;
+        }
+      }
+
+
+
+    }
+
+    //the hero-images
+    #hero-section-image {
+      width: 57rem;
+      height: 65rem;
+      margin: 0;
+
+      #hero-images {
+        height: 100%;
+        position: relative;
+
+        #hero-image {
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: auto;
+        }
+
+        .image-container-cardOne {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 19rem;
+          height: 216rem;
+
+          #credit-card-image {
+            @include base.img-container;
+            top: -47px;
+            left: -94px;
+            width: 198%;
+          }
+        }
+
+        .image-container-cardTwo {
+          position: absolute;
+          bottom:0;
+          right: 0;
+          width: 19rem;
+          height: 19.3rem;
+
+          #thumbs-up-image {
+            @include base.img-container;
+            bottom: 44px;
+            right: 83px;
+            width: 182%;
+          }
+        }
+      }
+    }
+  }
 }

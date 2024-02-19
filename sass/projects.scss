@@ -11,7 +11,7 @@
 
     .projects-title {
       margin: 0 0 70px 0;
-      @include base.heading(40);
+      @include base.heading(base.$hThree);
     }
 
     .projects-ul {

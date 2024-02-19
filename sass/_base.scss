@@ -10,6 +10,19 @@ $medium: #6b708d;
 $light: #f4f6fc;
 $light-blue: #ecf7ff;
 
+//Headings font-size
+$hOne: 60;
+$hTwo: 50;
+$hThree: 40;
+$hFour: 24;
+
+//Body font-size
+$body-medium: 24px;
+$body-regular: 20px;
+$headline-regular: 17px;
+$headline-medium: 17px;
+
+
 //FONT Styles
 @mixin font-medium ($color: $dark) {
   font-size: 2.4rem;
@@ -18,17 +31,10 @@ $light-blue: #ecf7ff;
   letter-spacing: 0;
 }
 
-@mixin font-regular ($color: $medium) {
-  font-size: 1.7rem;
+@mixin font-regular ($color: $medium, $size: $headline-regular) {
+  font-size: $size;
   color: $color;
   line-height: 150%;
-  letter-spacing: 0;
-}
-
-@mixin font-header-link ($color: $medium) {
-  font-size: 1.7rem;
-  color: $color;
-  line-height: 130%;
   letter-spacing: 0;
 }
 
@@ -38,7 +44,16 @@ $light-blue: #ecf7ff;
   font-size: $number * 1px;
 }
 
-//button style
+//links
+@mixin font-header-link ($color: $medium) {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: $color;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+
+//button
 @mixin button {
   background-color: $default;
   color: white;
@@ -55,8 +70,10 @@ $light-blue: #ecf7ff;
   justify-content: center;
 }
 
-//anchor tags in the footer and header
-@mixin anchor {
-  text-decoration: none;
-  @include font-header-link();
+//the image container for the cards in the hero section
+@mixin img-container {
+  position: relative;
+  object-fit: contain;
+  height: auto;
+  z-index: 2;
 }

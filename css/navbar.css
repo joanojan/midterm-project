@@ -1,4 +1,5 @@
 #nav-header {
+  z-index: 3;
   position: fixed;
   top: 0;
   display: flex;
@@ -29,7 +30,8 @@
   line-height: 130%;
   letter-spacing: 0;
 }
-#nav-header #navbar #contact {
+#nav-header #navbar .contact {
+  text-decoration: none;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 130%;

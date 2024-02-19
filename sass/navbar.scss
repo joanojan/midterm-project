@@ -1,6 +1,7 @@
 @use "base";
 
 #nav-header {
+  z-index: 3;
   position:fixed;
   top: 0;
   @include base.flex-center;
@@ -23,12 +24,12 @@
       min-width: 35%;
       .navbar-li {
         .navbar-a {
-          @include base.anchor;
+          @include base.font-header-link;
         }
       }
     }
     
-    #contact {
+    .contact {
       @include base.font-header-link;
       @include base.button;
       width: 150px;

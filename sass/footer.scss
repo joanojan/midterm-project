@@ -37,7 +37,7 @@
 
       .footer-li {
         .footer-a {
-          @include base.anchor;
+          @include base.font-header-link;
         }
         width: 100%;
         display: flex;
