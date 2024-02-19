@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*
+=========== HERO SECTION ===========
+*/
 #hero-section {
   margin-top: 122px;
   margin-right: 0;
@@ -121,6 +124,20 @@ body {
   bottom: 44px;
   right: 83px;
   width: 182%;
+}
+
+/*
+=========== CLIENTS SECTION ===========
+*/
+#client-section {
+  margin-top: 13rem;
+  height: 9.6rem;
+  max-width: 110rem;
+}
+#client-section .client-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */
