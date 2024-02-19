@@ -1,4 +1,4 @@
-.header {
+#nav-header {
   position: fixed;
   top: 0;
   display: flex;
@@ -9,27 +9,27 @@
   height: 122px;
   background-color: #f4f6fc;
 }
-.header #navbar {
+#nav-header #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-width: 76%;
   height: 52px;
 }
-.header #navbar .navbar-ul {
+#nav-header #navbar .navbar-ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   min-width: 35%;
 }
-.header #navbar .navbar-ul .navbar-li .navbar-a {
+#nav-header #navbar .navbar-ul .navbar-li .navbar-a {
   text-decoration: none;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 130%;
   letter-spacing: 0;
 }
-.header #navbar #contact {
+#nav-header #navbar #contact {
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 130%;

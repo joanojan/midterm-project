@@ -1,6 +1,6 @@
 @use "base";
 
-.header {
+#nav-header {
   position:fixed;
   top: 0;
   @include base.flex-center;
