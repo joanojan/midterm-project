@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: end;
   width: 144rem;
-  height: 122px;
+  height: 12.2rem;
   background-color: #f4f6fc;
 }
 #nav-header #navbar {
@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 76%;
-  height: 52px;
+  height: 5.2rem;
 }
 #nav-header #navbar .navbar-ul {
   display: flex;

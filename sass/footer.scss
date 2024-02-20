@@ -2,11 +2,11 @@
 
 .footer {
   @include base.flex-center;
-  height: 242px;
+  height: 24.2rem;
 
   .footer-container {
-    margin-top: 30px;
-    height: 112px;
+    margin-top: 3rem;
+    height: 11.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,24 +25,29 @@
     }
 
     #footer-logo {
-      height: 30px;
+      height: 3rem;
+      margin-left: 0;
     }
 
     .footer-ul {
       display: flex;
       justify-content: space-between;
       list-style: none;
-      width: 435px;
+      width: 43.5rem;
       height: 100%;
+      margin: 0;
 
       .footer-li {
         .footer-a {
+          height: fit-content;
+          margin: 0;
           @include base.font-header-link;
         }
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 0;
       }
     }
   }

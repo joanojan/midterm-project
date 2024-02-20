@@ -7,7 +7,7 @@
 
 body {
   background-color: base.$light;
-  max-width: 1440px;
+  max-width: 144rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 */
 
 #hero-section {
-  margin-top: 122px;
+  margin-top: 12.2rem;
   margin-right: 0;
   width: 140rem;
   height: 65rem;
@@ -52,7 +52,7 @@ body {
         #hero-article-button {
           @include base.font-header-link;
           @include base.button;
-          width: 150px;
+          width: 15rem;
           height: 5.2rem;
           margin-right: 4rem;
           margin-left: 0;
@@ -94,8 +94,8 @@ body {
 
           #credit-card-image {
             @include base.img-container;
-            top: -47px;
-            left: -94px;
+            top: -4.7rem;
+            left: -9.4rem;
             width: 198%;
           }
         }
@@ -109,8 +109,8 @@ body {
 
           #thumbs-up-image {
             @include base.img-container;
-            bottom: 44px;
-            right: 83px;
+            bottom: 4.4rem;
+            right: 8.3rem;
             width: 182%;
           }
         }
@@ -134,5 +134,3 @@ body {
     list-style: none;
   }
 }
-
-

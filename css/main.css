@@ -5,7 +5,7 @@
 
 body {
   background-color: #f4f6fc;
-  max-width: 1440px;
+  max-width: 144rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
 =========== HERO SECTION ===========
 */
 #hero-section {
-  margin-top: 122px;
+  margin-top: 12.2rem;
   margin-right: 0;
   width: 140rem;
   height: 65rem;
@@ -37,7 +37,7 @@ body {
 #hero-section #hero-section-container #hero-article #hero-article-paragraph {
   margin: 0;
   width: 43.5rem;
-  font-size: 20px;
+  font-size: 2rem;
   color: #6b708d;
   line-height: 150%;
   letter-spacing: 0;
@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 15rem;
   height: 5.2rem;
   margin-right: 4rem;
   margin-left: 0;
@@ -72,7 +72,7 @@ body {
   color: #6b708d;
   line-height: 130%;
   letter-spacing: 0;
-  font-size: 17px;
+  font-size: 1.7rem;
   color: #6b708d;
   line-height: 150%;
   letter-spacing: 0;
@@ -105,8 +105,8 @@ body {
   object-fit: contain;
   height: auto;
   z-index: 2;
-  top: -47px;
-  left: -94px;
+  top: -4.7rem;
+  left: -9.4rem;
   width: 198%;
 }
 #hero-section #hero-section-container #hero-section-image #hero-images .image-container-cardTwo {
@@ -121,8 +121,8 @@ body {
   object-fit: contain;
   height: auto;
   z-index: 2;
-  bottom: 44px;
-  right: 83px;
+  bottom: 4.4rem;
+  right: 8.3rem;
   width: 182%;
 }
 
