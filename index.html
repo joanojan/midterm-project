@@ -15,7 +15,7 @@
   <body>
 
     <!--Common html is loaded with jQuery (common folder) -->
-    <div id="nav-header"></div>
+    <div id="nav-container"></div>
 
     <!--The hero section is the main part of this page and links to other sections and pages -->
     <section id="hero-section">
@@ -60,14 +60,31 @@
 
     <!-- Testimonials: feedback and bad reviews -->
     <section id="testimonials-section">
-
+      <div id="memojis-container">
+        <img src="./assets/testimonial-section/memoji-1.png" alt="crossing-fingers person" class="memoji memoji-top-left">
+        <img src="./assets/testimonial-section/memoji-2.png"  alt="winking one" class="memoji memoji-top-right">
+        <img src="./assets/testimonial-section/memoji-3.png" alt="like-thumbs up" class="memoji memoji-bottom-left">
+        <img src="./assets/testimonial-section/memoji-4.png" alt="partying" class="memoji memoji-bottom-right">
+        <div id="testimonials-text-content">
+          <h3 id="testimonials-title">Hear What Our Clients Have to Say</h3>
+          <p id="testimonials-client-review">“Circle helped us through every stage of our startup.<br>We really enjoyed working with you.”</p>
+          <div id="testimonials-client-information">
+            <img src="./assets/testimonial-section/profile.png" alt="client id photo" id="testimonial-profile-image">
+            <div id="testimonial-name-and-company">
+              <p id="testimonial-name">Kristin Watson</p>
+              <a href="https://booking.com" id="testimonial-company">Booking.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- Services is the offer of the company, what they do. -->
     <section class="services" id="services-section"></section>
     <!-- CTA section is for subscribing and get mailed with news and offers. Also in the common folder -->
     <div class="cta" id="#cta-section"></div>
 
-    
+
     <!-- Footer is also common to all pages. -->
     <div class="footer" id="nav-footer"></div>
 

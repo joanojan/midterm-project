@@ -1,36 +1,34 @@
-#nav-header {
-  z-index: 3;
+#nav-container {
   position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: end;
-  width: 144rem;
-  height: 122px;
+  height: 12.2rem;
+  z-index: 3;
   background-color: #f4f6fc;
 }
-#nav-header #navbar {
+#nav-container #navbar {
+  height: 5.2rem;
+  width: 144rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-width: 76%;
-  height: 52px;
+  margin-bottom: 0;
 }
-#nav-header #navbar .navbar-ul {
+#nav-container #navbar .navbar-ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   min-width: 35%;
 }
-#nav-header #navbar .navbar-ul .navbar-li .navbar-a {
+#nav-container #navbar .navbar-ul .navbar-li .navbar-a {
   text-decoration: none;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 130%;
   letter-spacing: 0;
 }
-#nav-header #navbar .contact {
+#nav-container #navbar .contact {
   text-decoration: none;
   font-size: 1.7rem;
   color: #6b708d;

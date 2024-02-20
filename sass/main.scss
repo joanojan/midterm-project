@@ -7,7 +7,7 @@
 
 body {
   background-color: base.$light;
-  max-width: 1440px;
+  max-width: 144rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 */
 
 #hero-section {
-  margin-top: 122px;
+  margin-top: 22.2rem;
   margin-right: 0;
   width: 140rem;
   height: 65rem;
@@ -52,12 +52,12 @@ body {
         #hero-article-button {
           @include base.font-header-link;
           @include base.button;
-          width: 150px;
+          width: 15rem;
           height: 5.2rem;
           margin-right: 4rem;
           margin-left: 0;
         }
-  
+
         #hero-link-works {
           margin: 0;
           align-self: center;
@@ -87,30 +87,30 @@ body {
 
         .image-container-cardOne {
           position: absolute;
-          top:0;
+          top: 0;
           left: 0;
           width: 19rem;
           height: 216rem;
 
           #credit-card-image {
             @include base.img-container;
-            top: -47px;
-            left: -94px;
+            top: -4.7rem;
+            left: -9.4rem;
             width: 198%;
           }
         }
 
         .image-container-cardTwo {
           position: absolute;
-          bottom:0;
+          bottom: 0;
           right: 0;
           width: 19rem;
           height: 19.3rem;
 
           #thumbs-up-image {
             @include base.img-container;
-            bottom: 44px;
-            right: 83px;
+            bottom: 4.4rem;
+            right: 8.3rem;
             width: 182%;
           }
         }
@@ -129,10 +129,120 @@ body {
   max-width: 110rem;
 
   .client-ul {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     list-style: none;
   }
 }
 
+/*
+========== TESTIMONIALS SECTION ==========
+*/
 
+#testimonials-section {
+  box-sizing: border-box;
+  width: 132rem;
+  height: 62.2rem;
+  background-color: base.$dark;
+  margin-top: 20rem;
+  padding-top: 6.9rem;
+  padding-left: 4.7rem;
+  
+  #memojis-container {
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    width: 118.5rem;
+    height: 49.8rem;
+    padding-top: 6.9rem;
+    padding-left: 4.7rem;
+
+    .memoji {
+      z-index: 1;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .memoji-top-left {
+      position: absolute;
+      top: 0;
+      left: 1.3rem;
+    }
+
+    .memoji-top-right {
+      position: absolute;
+      top: 0;
+      right: 2.1rem;
+    }
+
+    .memoji-bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .memoji-bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  #testimonials-text-content {
+    box-sizing: border-box;
+    z-index: 2;
+    width: 110rem;
+    height: 38.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #testimonials-title {
+      @include base.heading(base.$hThree);
+      color: white;
+      margin: 0;
+    }
+
+    #testimonials-client-review {
+      @include base.font-medium(base.$orange);
+      line-height: 160%;
+      text-align: center;
+      margin-top: 10.4rem;
+    }
+
+    #testimonials-client-information {
+      margin: 10.5rem 0;
+      display: flex;
+      justify-self: flex-end;
+      margin-bottom: 0;
+      justify-content: space-between;
+      width: 17.1rem;
+      height: 5rem;
+
+      #testimonial-profile-image {
+        width: 5rem;
+        border-radius: 50%;
+        margin: 0;
+      }
+
+      #testimonial-name-and-company {
+        width: 11.1rem;
+        height: 3.7rem;
+        margin: 0;
+        align-self: center;
+
+        #testimonial-name {
+          @include base.font-regular(base.$hover);
+          line-height: 100%;
+          margin: 0;
+        }
+
+        #testimonial-company {
+          @include base.font-regular(base.$light, base.$text-regular);
+          text-decoration: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

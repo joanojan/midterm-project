@@ -1,21 +1,21 @@
 @use "base";
 
-#nav-header {
-  z-index: 3;
-  position:fixed;
+#nav-container {
+  position: fixed;
   top: 0;
-  @include base.flex-center;
-  align-items: end;
-  width: 144rem;
-  height: 122px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  height: 12.2rem;
+  z-index: 3;
   background-color: base.$light;
-
+  
   #navbar {
+    height: 5.2rem;
+    width: 144rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-width: 76%;
-    height: 52px;
+    margin-bottom: 0;
 
     .navbar-ul {
       display: flex;
