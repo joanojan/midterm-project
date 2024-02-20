@@ -140,4 +140,111 @@ body {
   list-style: none;
 }
 
+/*
+========== TESTIMONIALS SECTION ==========
+*/
+#testimonials-section {
+  box-sizing: border-box;
+  width: 132rem;
+  height: 62.2rem;
+  background-color: #292e47;
+  margin-top: 20rem;
+  padding-top: 6.9rem;
+  padding-left: 4.7rem;
+}
+#testimonials-section #memojis-container {
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+  width: 118.5rem;
+  height: 49.8rem;
+  padding-top: 6.9rem;
+  padding-left: 4.7rem;
+}
+#testimonials-section #memojis-container .memoji {
+  z-index: 1;
+  width: 15rem;
+  height: 15rem;
+}
+#testimonials-section #memojis-container .memoji-top-left {
+  position: absolute;
+  top: 0;
+  left: 1.3rem;
+}
+#testimonials-section #memojis-container .memoji-top-right {
+  position: absolute;
+  top: 0;
+  right: 2.1rem;
+}
+#testimonials-section #memojis-container .memoji-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#testimonials-section #memojis-container .memoji-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#testimonials-section #testimonials-text-content {
+  box-sizing: border-box;
+  z-index: 2;
+  width: 110rem;
+  height: 38.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonials-section #testimonials-text-content #testimonials-title {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-review {
+  font-size: 2.4rem;
+  color: #ffc600;
+  line-height: auto;
+  letter-spacing: 0;
+  line-height: 160%;
+  text-align: center;
+  margin-top: 10.4rem;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-information {
+  margin: 10.5rem 0;
+  display: flex;
+  justify-self: flex-end;
+  margin-bottom: 0;
+  justify-content: space-between;
+  width: 17.1rem;
+  height: 5rem;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-information #testimonial-profile-image {
+  width: 5rem;
+  border-radius: 50%;
+  margin: 0;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-information #testimonial-name-and-company {
+  width: 11.1rem;
+  height: 3.7rem;
+  margin: 0;
+  align-self: center;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-information #testimonial-name-and-company #testimonial-name {
+  font-size: 1.7rem;
+  color: #a2d6f9;
+  line-height: 150%;
+  letter-spacing: 0;
+  line-height: 100%;
+  margin: 0;
+}
+#testimonials-section #testimonials-text-content #testimonials-client-information #testimonial-name-and-company #testimonial-company {
+  font-size: 1.3rem;
+  color: #f4f6fc;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
