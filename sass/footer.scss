@@ -1,21 +1,21 @@
 @use "base";
 
 .footer {
-  @include base.flex-center;
   height: 24.2rem;
 
   .footer-container {
+    width: 110rem;
     margin-top: 3rem;
     height: 11.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 76%;
 
     .footer-content {
       display: flex;
+      margin: 0;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: start;
       height: 100%;
 
