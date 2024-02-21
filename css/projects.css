@@ -1,4 +1,4 @@
-.projects {
+.projects, .services {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -6,43 +6,49 @@
   height: 56.1rem;
   margin-top: 12.2rem;
 }
-.projects .projects-container {
+.projects .projects-container, .services .projects-container {
   width: 110rem;
 }
-.projects .projects-container .projects-title {
+.projects .projects-container .projects-title, .services .projects-container .projects-title {
   margin: 0 0 7rem 0;
   font-weight: bold;
   font-size: 40px;
 }
-.projects .projects-container .projects-ul {
+.projects .projects-container .projects-ul, .services .projects-container .projects-ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  /*
+  ======= TO-DO: Services section li ========
+  */
 }
-.projects .projects-container .projects-ul .projects-li {
+.projects .projects-container .projects-ul .services-li, .services .projects-container .projects-ul .services-li {
+  border: 2px solid black;
+}
+.projects .projects-container .projects-ul .projects-li, .services .projects-container .projects-ul .projects-li {
   height: 44.4rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.projects .projects-container .projects-ul .project-img {
+.projects .projects-container .projects-ul .project-img, .services .projects-container .projects-ul .project-img {
   width: 34rem;
   height: 24rem;
 }
-.projects .projects-container .projects-ul .project-text .project-title {
+.projects .projects-container .projects-ul .project-text .project-title, .services .projects-container .projects-ul .project-text .project-title {
   font-size: 2.4rem;
   color: #292e47;
   line-height: auto;
   letter-spacing: 0;
   margin: 3rem 0 0.8rem 3rem;
 }
-.projects .projects-container .projects-ul .project-text .project-subject {
+.projects .projects-container .projects-ul .project-text .project-subject, .services .projects-container .projects-ul .project-text .project-subject {
   margin: 0 0 5.4rem 3rem;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 150%;
   letter-spacing: 0;
 }
-.projects .projects-container .projects-ul .project-text .project-learn-more {
+.projects .projects-container .projects-ul .project-text .project-learn-more, .services .projects-container .projects-ul .project-text .project-learn-more {
   margin: 0 0 3rem 3rem;
   font-size: 1.7rem;
   color: #072ac8;
