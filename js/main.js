@@ -3,7 +3,7 @@ $(function () {
   //navbar is fixed in top of each page.
   $("#nav-container").load("./common/navbar.html");
 
-  //I re-huse the projects css for the services, that's why I need to select .first()
+  //re-huse projects css for the services-section.
   $(".projects")
     .first()
     .load("./common/projects.html", function () {
