@@ -1,17 +1,22 @@
+//same as $(document).ready(function ... )
 $(function () {
+  //navbar is fixed in top of each page.
   $("#nav-container").load("./common/navbar.html");
 
+  //I re-huse the projects css for the services, that's why I need to select .first()
   $(".projects")
     .first()
     .load("./common/projects.html", function () {
       $(".projects ul div").removeClass("icon-wrapper");
     });
 
+  //the "Call To Action" is a form to get the email of the user.
   $(".cta").load("./common/cta.html");
 
+  //footer
   $(".footer").load("./common/footer.html");
 
-  //Services section
+  //Services section diff: title, service-title, icons, description, css.
   $(".projects")
     .last()
     .load("./common/projects.html", function () {

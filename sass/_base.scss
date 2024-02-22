@@ -23,7 +23,6 @@ $headline-regular: 1.7rem;
 $headline-medium: 1.7rem;
 $text-regular: 1.3rem;
 
-
 //FONT Styles
 @mixin font-medium ($color: $dark) {
   font-size: 2.4rem;
@@ -78,4 +77,3 @@ $text-regular: 1.3rem;
   height: auto;
   z-index: 2;
 }
-
