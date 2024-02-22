@@ -1,0 +1,24 @@
+@use "base";
+
+* {
+  font-size: 10px;
+  margin: auto; //keeps the content in centered
+}
+
+body {
+  background-color: base.$light;
+  max-width: 144rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-section {
+    margin-top: 22.2rem;
+    margin-right: 0;
+    width: 140rem;
+    height: 65rem;
+    border: 2px solid black;
+
+    .project-title {
+        @include base.heading(base.$hOne);
+    }
+}

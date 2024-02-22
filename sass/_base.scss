@@ -24,14 +24,14 @@ $headline-medium: 1.7rem;
 $text-regular: 1.3rem;
 
 //FONT Styles
-@mixin font-medium ($color: $dark) {
+@mixin font-medium($color: $dark) {
   font-size: 2.4rem;
   color: $color;
   line-height: auto;
   letter-spacing: 0;
 }
 
-@mixin font-regular ($color: $medium, $size: $headline-regular) {
+@mixin font-regular($color: $medium, $size: $headline-regular) {
   font-size: $size;
   color: $color;
   line-height: 150%;
@@ -39,13 +39,13 @@ $text-regular: 1.3rem;
 }
 
 //headings style $number = font-size in pixels
-@mixin heading ($number: 10) {
+@mixin heading($number: 10) {
   font-weight: bold;
   font-size: $number * 1px;
 }
 
 //links
-@mixin font-header-link ($color: $medium) {
+@mixin font-header-link($color: $medium) {
   text-decoration: none;
   font-size: 1.7rem;
   color: $color;
@@ -63,7 +63,7 @@ $text-regular: 1.3rem;
   justify-content: center;
 }
 
-//common flex display
+//centering flex display
 @mixin flex-center {
   display: flex;
   width: 100%;
