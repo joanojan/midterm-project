@@ -66,6 +66,7 @@ body {
   margin-right: 4rem;
   margin-left: 0;
 }
+
 #hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-article-button:hover {
   color: #072ac8;
 }
@@ -87,9 +88,11 @@ body {
   letter-spacing: 0;
   line-height: 130%;
 }
+
 #hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-link-works:hover {
   color: #072ac8;
 }
+
 #hero-section #hero-section-container #hero-section-image {
   width: 57rem;
   height: 65rem;

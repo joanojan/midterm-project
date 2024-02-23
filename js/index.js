@@ -3,6 +3,7 @@
  */
 $(function () {
   //icon-wrapper class is needed for the #services-section, but not in the .projects
+
   $(".projects")
     .first()
     .load("./common/projects.html", function () {
@@ -31,6 +32,7 @@ $(function () {
         if (index === 2) $(this).text("Application Development");
       });
       $(serviceDescription).each(function (index) {
+
         if (index === 0)
           $(this).text(
             "Circle provides you with a stunning user interface design that is accessible to everyone."
