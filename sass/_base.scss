@@ -77,3 +77,14 @@ $text-regular: 1.3rem;
   height: auto;
   z-index: 2;
 }
+
+* {
+  font-size: 10px;
+  margin: auto; //keeps the content in centered
+}
+
+body {
+  background-color: $light;
+  max-width: 144rem;
+  font-family: "Roboto", sans-serif;
+}
