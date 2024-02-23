@@ -63,6 +63,8 @@ body {
   color: #ffc600;
   line-height: 150%;
   letter-spacing: 0;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
   background-color: #072ac8;
   color: white;
   height: 100%;
@@ -72,6 +74,10 @@ body {
   width: 19.8rem;
   height: 8rem;
   line-height: 130%;
+}
+.cta-section .cta-form .cta-submit:hover {
+  color: #292e47;
+  background-color: #a2d6f9;
 }
 
 /*# sourceMappingURL=cta.css.map */

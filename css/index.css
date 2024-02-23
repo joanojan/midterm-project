@@ -53,6 +53,8 @@ body {
   color: #6b708d;
   line-height: 130%;
   letter-spacing: 0;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
   background-color: #072ac8;
   color: white;
   height: 100%;
@@ -63,6 +65,14 @@ body {
   height: 5.2rem;
   margin-right: 4rem;
   margin-left: 0;
+}
+
+#hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-article-button:hover {
+  color: #072ac8;
+}
+#hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-article-button:hover {
+  color: #292e47;
+  background-color: #a2d6f9;
 }
 #hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-link-works {
   margin: 0;
@@ -78,6 +88,11 @@ body {
   letter-spacing: 0;
   line-height: 130%;
 }
+
+#hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-link-works:hover {
+  color: #072ac8;
+}
+
 #hero-section #hero-section-container #hero-section-image {
   width: 57rem;
   height: 65rem;

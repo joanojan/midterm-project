@@ -25,10 +25,8 @@
           <h1 id="hero-article-title">Empower Your Business With Stunning Design!</h1>
           <p id="hero-article-paragraph">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
           <div id="hero-article-contact-links">
-            <!--TO-DO: Linkt to contact.html-->
-            <a id="hero-article-button" href="#contact.html">Get in touch</a>
-            <!-- TO-DO: Should link to projects section -->
-            <a id="hero-link-works" href="#">See our work</a>      
+            <a id="hero-article-button" href="contact.html">Get in touch</a>
+            <a id="hero-link-works" href="index.html#services-section">See our work</a>      
           </div>
         </article>
         <aside id="hero-section-image">
@@ -48,7 +46,11 @@
     <!--The client section is like top companies using the services -->
     <section id="client-section">
       <ul class="client-ul">
-        <li class="client-li"><img src="./assets/logos/airbnb-logo.svg" alt="airbnb" class="logo"></li>
+        <li class="client-li">
+          <a href="https://www.airbnb.com/">
+            <img src="./assets/logos/airbnb-logo.svg" alt="airbnb" class="logo"></li>
+          </a>
+        <!-- TO-DO: link to the sites, hover and colors of the icons -->
         <li class="client-li"><img src="./assets/logos/google-logo.svg" alt="google" class="logo"></li>
         <li class="client-li"><img src="./assets/logos/microsoft-logo.svg" alt="microsoft" class="logo"></li>
         <li class="client-li"><img src="./assets/logos/fedex-logo.svg" alt="fedex" class="logo"></li>
@@ -57,7 +59,7 @@
     </section>
 
     <!-- projects -> common folder -->
-    <div class="projects"></div>
+    <div class="projects" id="projects-section"></div>
 
     <!-- Testimonials: feedback and bad reviews -->
     <section id="testimonials-section">
@@ -89,8 +91,10 @@
     <!-- Footer is also common to all pages. -->
     <div class="footer" id="nav-footer"></div>
 
-
     <!-- main.js ->  common html to be displayed with jQuery. -->
+
+    <script src="./js/common.js"></script>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
