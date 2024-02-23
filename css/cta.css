@@ -26,6 +26,7 @@ body {
   justify-content: center;
 }
 .cta-section .cta-title {
+  color: #292e47;
   font-weight: bold;
   font-size: 40px;
   margin-top: 0;
@@ -44,6 +45,7 @@ body {
   display: flex;
 }
 .cta-section .cta-form .cta-input {
+  border: none;
   box-sizing: border-box;
   padding-left: 7rem;
   width: 39.3rem;

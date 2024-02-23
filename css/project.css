@@ -27,6 +27,7 @@ body {
 .project-article .project-title {
   margin-bottom: 2rem;
   height: 7rem;
+  color: #292e47;
   font-weight: bold;
   font-size: 60px;
 }
