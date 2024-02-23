@@ -9,6 +9,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  font-size: 10px;
+  margin: auto;
+}
+
+body {
+  background-color: #f4f6fc;
+  max-width: 144rem;
+  font-family: "Roboto", sans-serif;
+}
+
 .project-section {
   margin-top: 22.2rem;
   margin-right: 0;

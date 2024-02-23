@@ -1,20 +1,10 @@
-//same as $(document).ready(function ... )
 $(function () {
-  //navbar is fixed in top of each page.
-  $("#nav-container").load("./common/navbar.html");
-
   //re-huse projects css for the services-section.
   $(".projects")
     .first()
     .load("./common/projects.html", function () {
       $(".projects ul div").removeClass("icon-wrapper");
     });
-
-  //the "Call To Action" is a form to get the email of the user.
-  $(".cta").load("./common/cta.html");
-
-  //footer
-  $(".footer").load("./common/footer.html");
 
   //Services section diff: title, service-title, icons, description, css.
   $(".projects")
@@ -38,13 +28,22 @@ $(function () {
         if (index === 2) $(this).text("Application Development");
       });
       $(serviceDescription).each(function (index) {
-        if (index === 0) $(this).text("Circle provides you with a stunning user interface design that is accessible to everyone.");
-        if (index === 1) $(this).text("Circle always focuses on delivering the best user experience to your customers.");
-        if (index === 2) $(this).text("We develop high-quality mobile and web applications using the latest technology stack.");
-      })
+        if (index === 0)
+          $(this).text(
+            "Circle provides you with a stunning user interface design that is accessible to everyone."
+          );
+        if (index === 1)
+          $(this).text(
+            "Circle always focuses on delivering the best user experience to your customers."
+          );
+        if (index === 2)
+          $(this).text(
+            "We develop high-quality mobile and web applications using the latest technology stack."
+          );
+      });
       $(serviceDescription).css({
-        "width": "28rem",
-        "margin-top": "3rem"
+        width: "28rem",
+        "margin-top": "3rem",
       });
     });
 });

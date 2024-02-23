@@ -9,4 +9,6 @@ $(function(){
     $(".projects").load("./common/projects.html", function () {
       $(".projects ul div").removeClass("icon-wrapper");
     });
+
+    $(".project-section").css('background-color', 'red');
 })

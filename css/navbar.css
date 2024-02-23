@@ -1,3 +1,14 @@
+* {
+  font-size: 10px;
+  margin: auto;
+}
+
+body {
+  background-color: #f4f6fc;
+  max-width: 144rem;
+  font-family: "Roboto", sans-serif;
+}
+
 #nav-container {
   position: fixed;
   top: 0;
@@ -28,12 +39,17 @@
   line-height: 130%;
   letter-spacing: 0;
 }
+#nav-container #navbar .navbar-ul .navbar-li .navbar-a:hover {
+  color: #072ac8;
+}
 #nav-container #navbar .contact {
   text-decoration: none;
   font-size: 1.7rem;
   color: #6b708d;
   line-height: 130%;
   letter-spacing: 0;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
   background-color: #072ac8;
   color: white;
   height: 100%;
@@ -41,6 +57,13 @@
   align-items: center;
   justify-content: center;
   width: 150px;
+}
+#nav-container #navbar .contact:hover {
+  color: #072ac8;
+}
+#nav-container #navbar .contact:hover {
+  color: #292e47;
+  background-color: #a2d6f9;
 }
 
 /*# sourceMappingURL=navbar.css.map */
