@@ -20,16 +20,54 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.project-section {
-  margin-top: 22.2rem;
-  margin-right: 0;
-  width: 140rem;
-  height: 65rem;
-  border: 2px solid black;
+.project-article {
+  margin-top: 26.8rem;
+  width: 110rem;
 }
-.project-section .project-title {
+.project-article .project-title {
+  margin-bottom: 2rem;
+  height: 7rem;
   font-weight: bold;
   font-size: 60px;
+}
+.project-article .project-info {
+  display: flex;
+  margin-bottom: 8rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-article .project-info .project-article-subject {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #6b708d;
+  line-height: auto;
+  letter-spacing: 0;
+}
+.project-article .project-info .project-date {
+  font-size: 2rem;
+  color: #292e47;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin: 0;
+}
+.project-article .project-info .project-date .project-dateTime {
+  font-size: 2rem;
+  color: #6b708d;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.project-article .project-article-image {
+  height: 44.4rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 7rem;
+}
+.project-article .project-article-text {
+  font-size: 2rem;
+  color: #6b708d;
+  line-height: 150%;
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=project.css.map */

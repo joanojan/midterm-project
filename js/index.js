@@ -1,12 +1,15 @@
+/**
+ * index.html needs to load the .projects, .services
+ */
 $(function () {
-  //re-huse projects css for the services-section.
+  //icon-wrapper class is needed for the #services-section, but not in the .projects
   $(".projects")
     .first()
     .load("./common/projects.html", function () {
       $(".projects ul div").removeClass("icon-wrapper");
     });
 
-  //Services section diff: title, service-title, icons, description, css.
+  //Services section -> change the content
   $(".projects")
     .last()
     .load("./common/projects.html", function () {
