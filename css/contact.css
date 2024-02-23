@@ -1,0 +1,28 @@
+* {
+  font-size: 10px;
+  margin: auto;
+}
+
+body {
+  background-color: #f4f6fc;
+  max-width: 144rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-us {
+  color: #292e47;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 26.8rem;
+  width: 110rem;
+}
+
+.contact-form {
+  width: 110rem;
+  height: 66rem;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin-bottom: 15.4;
+}
+
+/*# sourceMappingURL=contact.css.map */

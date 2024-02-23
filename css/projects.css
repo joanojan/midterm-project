@@ -25,6 +25,7 @@ body {
 .projects .projects-container .projects-title,
 .services .projects-container .projects-title {
   margin: 0 0 7rem 0;
+  color: #292e47;
   font-weight: bold;
   font-size: 40px;
 }

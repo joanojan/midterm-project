@@ -1,0 +1,17 @@
+@use "base";
+
+.contact-us {
+    @include base.heading(base.$hOne);
+    margin-top: 26.8rem;
+    width: 110rem;
+}
+
+.contact-form {
+    width: 110rem;
+    height: 66rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-bottom: 15.4;
+
+    
+}
