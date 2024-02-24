@@ -12,7 +12,7 @@ async function getProjects() {
     const res = await fetch(url);
     const projects = await res.json();
     return projects;
-  } catch {
+  } catch (error) {
     errorCallback(error);
   }
 }

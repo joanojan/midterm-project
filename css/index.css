@@ -145,12 +145,28 @@ body {
 #client-section {
   margin-top: 13rem;
   height: 9.6rem;
-  max-width: 110rem;
+  width: 110rem;
 }
 #client-section .client-ul {
+  padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
+}
+#client-section .client-ul .client-li {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+}
+#client-section .client-ul .client-li .client-link {
+  margin-left: 0;
+}
+#client-section .client-ul .logo {
+  filter: grayscale(100%);
+}
+#client-section .client-ul .logo:hover {
+  transition-duration: 0.2s;
+  filter: grayscale(0%);
 }
 
 /*
