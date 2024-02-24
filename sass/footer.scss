@@ -1,11 +1,13 @@
 @use "base";
 
 .footer {
+  max-width: 144rem;
+  margin: auto;
   height: 24.2rem;
 
   .footer-container {
-    width: 110rem;
     margin-top: 3rem;
+    width: 110rem;
     height: 11.2rem;
     display: flex;
     justify-content: space-between;

@@ -1,20 +1,23 @@
-* {
+:root {
   font-size: 10px;
-  margin: auto;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 body {
   background-color: #f4f6fc;
-  max-width: 144rem;
-  font-family: "Roboto", sans-serif;
+  display: grid;
+  justify-content: center;
 }
 
 .footer {
+  max-width: 144rem;
+  margin: auto;
   height: 24.2rem;
 }
 .footer .footer-container {
-  width: 110rem;
   margin-top: 3rem;
+  width: 110rem;
   height: 11.2rem;
   display: flex;
   justify-content: space-between;

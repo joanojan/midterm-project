@@ -1,6 +1,7 @@
 @use "base";
 
 #nav-container {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 50%;
@@ -12,16 +13,21 @@
   
   #navbar {
     height: 5.2rem;
-    width: 144rem;
+    width: 110rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin: 7rem auto 0 auto;
+
+    #logo {
+      margin: 0;
+    }
 
     .navbar-ul {
       display: flex;
       list-style: none;
       justify-content: space-between;
-      min-width: 35%;
+      width: 30rem;
       .navbar-li {
         .navbar-a {
           @include base.font-header-link;
@@ -33,6 +39,7 @@
       @include base.font-header-link;
       @include base.button;
       width: 150px;
+      margin: 0;
     }
   }
 }

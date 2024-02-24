@@ -113,6 +113,7 @@
 */
 
 #client-section {
+  margin: auto;
   margin-top: 13rem;
   height: 9.6rem;
   width: 110rem;
@@ -120,7 +121,7 @@
   .client-ul {
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
 
     .client-li {
