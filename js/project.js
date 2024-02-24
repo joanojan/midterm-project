@@ -1,3 +1,5 @@
+import { getProjects, errorCallback } from "./utils.js";
+
 /**
  * load the project - and other projects
  */
@@ -9,8 +11,6 @@ $(function () {
     $(".projects-title").text("Other Projects");
   });
 });
-
-import { getProjects, errorCallback } from "./utils.js";
 
 //get and render the first project
 getProjects().then(function (projects) {

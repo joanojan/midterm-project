@@ -1,5 +1,3 @@
-import { getCurrentURL } from "./utils.js";
-
 /**
  * Load the navbar, footer and cta
  */

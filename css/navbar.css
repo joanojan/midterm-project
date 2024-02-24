@@ -56,6 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
   width: 150px;
 }
 #nav-container #navbar .contact:hover {
