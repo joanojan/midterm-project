@@ -2,8 +2,8 @@
  * load the project - and other projects
  */
 
+//other projects
 $(function () {
-  //other projects
   $(".projects").load("./common/projects.html", function () {
     $(".projects ul div").removeClass("icon-wrapper");
     $(".projects-title").text("Other Projects");
