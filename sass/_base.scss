@@ -1,3 +1,8 @@
+//screen sizes
+$tablet: 70rem;
+$mobile: 5rem;
+$laptop: 110rem;
+
 //COLOR STYLES
 $orange: #ffc600;
 $yellow: #fce300;
@@ -76,8 +81,9 @@ $text-regular: 1.3rem;
 //centering flex display
 @mixin flex-center {
   display: flex;
-  width: 100%;
+  margin: auto;
   justify-content: center;
+  align-items: center;
 }
 
 //the image container for the cards in the hero section
@@ -86,12 +92,6 @@ $text-regular: 1.3rem;
   object-fit: contain;
   height: auto;
   z-index: 2;
-}
-
-@media (max-width: 600px) {
-  :root {
-    font-size: 8px;
-  }
 }
 
 :root {
@@ -107,4 +107,16 @@ body {
   background-color: $light;
   display: grid;
   justify-content: center;
+}
+
+@media only screen and (max-width: $tablet) {
+  :root {
+    font-size: 8px;
+  }
+  .cta-content {
+    width: 90rem;
+  }
+  .memojis-container {
+    width: 90rem;
+  }
 }

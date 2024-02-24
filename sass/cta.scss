@@ -2,54 +2,59 @@
 
 .cta-section {
   @include base.flex-center;
+  flex-direction: column;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
   width: 132rem;
   height: 50rem;
   margin-top: 13.6rem;
-  padding-top: 13.6rem;
-  padding-left: 11rem;
   margin-bottom: 17rem;
   background-color: base.$orange;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  .cta-title {
-    @include base.heading(base.$hThree);
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-
-  .cta-p {
-    @include base.font-regular(base.$dark, base.$body-regular);
-    margin-top: 0;
-    margin-bottom: 5rem;
-  }
-
-  .cta-form {
-    margin-top: 0;
+  .cta-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .cta-input {
-      border: none;
-      box-sizing: border-box;
-      padding-left: 7rem;
-      width: 39.3rem;
-      height: 8rem;
-      background-image: url(../assets/newsletter/icon/mail.svg);
-      background-repeat: no-repeat;
-      background-position-y: center;
-      background-position-x: 3rem;
-      @include base.font-regular(base.$dark);
-      margin-right: 2rem;
+    .cta-title {
+      @include base.heading(base.$hThree);
+      margin-top: 0;
+      margin-bottom: 2rem;
     }
 
-    .cta-submit {
-      @include base.font-regular(base.$orange, base.$headline);
-      @include base.button;
-      width: 19.8rem;
-      height: 8rem;
-      line-height: 130%;
+    .cta-p {
+      @include base.font-regular(base.$dark, base.$body-regular);
+      margin-top: 0;
+      margin-bottom: 5rem;
+    }
+
+    .cta-form {
+      margin-top: 0;
+      display: flex;
+
+      .cta-input {
+        border: none;
+        box-sizing: border-box;
+        padding-left: 7rem;
+        width: 39.3rem;
+        height: 8rem;
+        background-image: url(../assets/newsletter/icon/mail.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3rem;
+        @include base.font-regular(base.$dark);
+        margin-right: 2rem;
+      }
+
+      .cta-submit {
+        @include base.font-regular(base.$orange, base.$headline);
+        @include base.button;
+        width: 19.8rem;
+        height: 8rem;
+        line-height: 130%;
+      }
     }
   }
 }

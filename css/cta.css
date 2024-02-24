@@ -1,8 +1,3 @@
-@media (max-width: 600px) {
-  :root {
-    font-size: 8px;
-  }
-}
 :root {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
@@ -18,30 +13,46 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width: 70rem) {
+  :root {
+    font-size: 8px;
+  }
+  .cta-content {
+    width: 90rem;
+  }
+  .memojis-container {
+    width: 90rem;
+  }
+}
 .cta-section {
   display: flex;
-  width: 100%;
+  margin: auto;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
   width: 132rem;
   height: 50rem;
   margin-top: 13.6rem;
-  padding-top: 13.6rem;
-  padding-left: 11rem;
   margin-bottom: 17rem;
   background-color: #ffc600;
+}
+.cta-section .cta-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.cta-section .cta-title {
+.cta-section .cta-content .cta-title {
   color: #292e47;
   font-weight: bold;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 2rem;
 }
-.cta-section .cta-p {
+.cta-section .cta-content .cta-p {
   font-size: 2rem;
   color: #292e47;
   line-height: 150%;
@@ -49,11 +60,11 @@ body {
   margin-top: 0;
   margin-bottom: 5rem;
 }
-.cta-section .cta-form {
+.cta-section .cta-content .cta-form {
   margin-top: 0;
   display: flex;
 }
-.cta-section .cta-form .cta-input {
+.cta-section .cta-content .cta-form .cta-input {
   border: none;
   box-sizing: border-box;
   padding-left: 7rem;
@@ -69,7 +80,7 @@ body {
   letter-spacing: 0;
   margin-right: 2rem;
 }
-.cta-section .cta-form .cta-submit {
+.cta-section .cta-content .cta-form .cta-submit {
   font-size: 1.7rem;
   color: #ffc600;
   line-height: 150%;
@@ -87,7 +98,7 @@ body {
   height: 8rem;
   line-height: 130%;
 }
-.cta-section .cta-form .cta-submit:hover {
+.cta-section .cta-content .cta-form .cta-submit:hover {
   color: #292e47;
   background-color: #a2d6f9;
 }

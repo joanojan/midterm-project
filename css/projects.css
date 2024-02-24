@@ -1,8 +1,3 @@
-@media (max-width: 600px) {
-  :root {
-    font-size: 8px;
-  }
-}
 :root {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
@@ -18,11 +13,23 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width: 70rem) {
+  :root {
+    font-size: 8px;
+  }
+  .cta-content {
+    width: 90rem;
+  }
+  .memojis-container {
+    width: 90rem;
+  }
+}
 .projects,
 .services {
   display: flex;
-  width: 100%;
+  margin: auto;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 56.1rem;
   margin-top: 12.2rem;
