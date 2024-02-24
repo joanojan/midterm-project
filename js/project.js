@@ -1,30 +1,35 @@
+import { getProjects, errorCallback } from "./utils.js";
+
 /**
  * load the project - and other projects
  */
 
-$(function(){
-    //other projects
-    $(".projects").load("./common/projects.html", function () {
-      $(".projects ul div").removeClass("icon-wrapper");
-      $(".projects-title").text("Other Projects");
-    });
+//other projects
+$(function () {
+  $(".projects").load("./common/projects.html", function () {
+    $(".projects ul div").removeClass("icon-wrapper");
+    $(".projects-title").text("Other Projects");
+  });
 });
 
-import { getProjects, errorCallback } from "./utils.js";
-
 //get and render the first project
-getProjects().then(function(projects){
-  try{
-    const firstProjectOjbect = projects.filter(project=>project.uuid === '1');
+getProjects().then(function (projects) {
+  try {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id');
+    const firstProjectOjbect = projects.filter(
+      (project) => project.uuid === id
+    );
     const firstProject = firstProjectOjbect[0];
     renderProject(firstProject);
     console.log(firstProject);
-  } catch {
+  } catch (error) {
     errorCallback(error);
   }
 });
 
-function renderProject(project){
+function renderProject(project) {
   //using vanilla javascript
   const title = document.querySelector(".project-title");
   title.textContent = project.name;
@@ -34,5 +39,3 @@ function renderProject(project){
   $(".project-article-image").attr("src", project.image);
   $(".project-article-text").html(project.content);
 }
-
-

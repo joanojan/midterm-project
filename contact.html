@@ -10,22 +10,65 @@
     />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/contact.css" />
     <title>Contact page</title>
   </head>
   <body>
-
+    <!--navbar-->
     <div id="nav-container"></div>
 
+    <!--form title-->
     <h1 class="contact-us">Contact Us</h1>
 
-    <form class="contact-form">
-      
-
+    <!--form-->
+    <form class="form" onsubmit="alert('Thanks for contacting us!')">
+      <div class="form-row">
+        <label class="form-label" for="name">Full Name *</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div class="form-column">
+        <div class="form-field-column">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="form-field-column">
+          <label for="phone" class="form-label">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            class="form-input"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="message">Message</label>
+        <input
+          type="text"
+          id="message"
+          placeholder="Write your message here ...."
+          class="form-input"
+        />
+      </div>
+      <input class="contact-form-submit" type="submit" value="Submit" />
     </form>
 
+    <!--footer-->
     <div class="footer" id="nav-footer"></div>
 
-    <script src="./js/common.js"></script>
+    <!--scripts-->
+    <script src="./js/common.js" type="module"></script>
   </body>
 </html>
