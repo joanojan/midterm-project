@@ -45,7 +45,7 @@
     }
 
     .cta-submit {
-      @include base.font-regular(base.$orange, base.$headline-medium);
+      @include base.font-regular(base.$orange, base.$headline);
       @include base.button;
       width: 19.8rem;
       height: 8rem;

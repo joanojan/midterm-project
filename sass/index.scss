@@ -5,16 +5,15 @@
 */
 
 #hero-section {
-  margin-top: 22.2rem;
-  margin-right: 0;
+  margin: 22.2rem 0 0 0;
   width: 140rem;
   height: 65rem;
 
   //The text-content
   #hero-section-container {
+    margin: auto;
     width: 110rem;
     height: 100%;
-    margin-left: 17rem;
     display: flex;
 
     #hero-article {
@@ -149,7 +148,7 @@
 */
 
 #testimonials-section {
-  box-sizing: border-box;
+  margin: auto;
   width: 132rem;
   height: 62.2rem;
   background-color: base.$dark;
@@ -230,11 +229,16 @@
 
       #testimonial-profile-image {
         width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         margin: 0;
       }
 
       #testimonial-name-and-company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         width: 11.1rem;
         height: 3.7rem;
         margin: 0;

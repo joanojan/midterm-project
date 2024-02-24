@@ -19,8 +19,7 @@ $hFour: 24;
 //Body font-size
 $body-medium: 2.4rem;
 $body-regular: 2rem;
-$headline-regular: 1.7rem;
-$headline-medium: 1.7rem;
+$headline: 1.7rem;
 $text-regular: 1.3rem;
 
 //FONT Styles
@@ -31,7 +30,7 @@ $text-regular: 1.3rem;
   letter-spacing: 0;
 }
 
-@mixin font-regular($color: $medium, $size: $headline-regular) {
+@mixin font-regular($color: $medium, $size: $headline) {
   font-size: $size;
   color: $color;
   line-height: 150%;
@@ -89,10 +88,19 @@ $text-regular: 1.3rem;
   z-index: 2;
 }
 
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
 :root {
   font-size: 10px;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  a[href] {
+    cursor: pointer;
+  }
 }
 
 body {
@@ -100,4 +108,3 @@ body {
   display: grid;
   justify-content: center;
 }
-
