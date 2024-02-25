@@ -13,18 +13,22 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 70rem) {
+@media only screen and (max-width: 1100px) {
   :root {
     font-size: 8px;
+    overflow-x: hidden;
   }
-  .cta-content {
-    width: 90rem;
+  .cta {
+    width: 110rem;
   }
-  .memojis-container {
-    width: 90rem;
+  #testimonials-section {
+    width: 110rem;
+  }
+  .memoji {
+    display: none;
   }
 }
-.cta-section {
+.cta {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -39,20 +43,20 @@ body {
   margin-bottom: 17rem;
   background-color: #ffc600;
 }
-.cta-section .cta-content {
+.cta .cta-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.cta-section .cta-content .cta-title {
+.cta .cta-content .cta-title {
   color: #292e47;
   font-weight: bold;
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 2rem;
 }
-.cta-section .cta-content .cta-p {
+.cta .cta-content .cta-p {
   font-size: 2rem;
   color: #292e47;
   line-height: 150%;
@@ -60,11 +64,11 @@ body {
   margin-top: 0;
   margin-bottom: 5rem;
 }
-.cta-section .cta-content .cta-form {
+.cta .cta-content .cta-form {
   margin-top: 0;
   display: flex;
 }
-.cta-section .cta-content .cta-form .cta-input {
+.cta .cta-content .cta-form .cta-input {
   border: none;
   box-sizing: border-box;
   padding-left: 7rem;
@@ -80,7 +84,7 @@ body {
   letter-spacing: 0;
   margin-right: 2rem;
 }
-.cta-section .cta-content .cta-form .cta-submit {
+.cta .cta-content .cta-form .cta-submit {
   font-size: 1.7rem;
   color: #ffc600;
   line-height: 150%;
@@ -98,7 +102,7 @@ body {
   height: 8rem;
   line-height: 130%;
 }
-.cta-section .cta-content .cta-form .cta-submit:hover {
+.cta .cta-content .cta-form .cta-submit:hover {
   color: #292e47;
   background-color: #a2d6f9;
 }

@@ -148,6 +148,7 @@
 */
 
 #testimonials-section {
+  box-sizing: border-box;
   position: relative;
   margin: auto;
   width: 132rem;
@@ -159,7 +160,6 @@
   
   #memojis-container {
     box-sizing: border-box;
-    z-index: 1;
     position: absolute;
     left: 5.1rem;
     top: 6.3rem;
@@ -198,9 +198,6 @@
   }
 
   .testimonials-content {
-    width: 110rem;
-    height: 38.2rem;
-    box-sizing: border-box;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -221,6 +218,7 @@
 
     #testimonials-title {
       @include base.heading(base.$hThree);
+      text-align: center;
       color: white;
       margin: 0;
     }

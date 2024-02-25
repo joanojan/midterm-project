@@ -13,15 +13,19 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: 70rem) {
+@media only screen and (max-width: 1100px) {
   :root {
     font-size: 8px;
+    overflow-x: hidden;
   }
-  .cta-content {
-    width: 90rem;
+  .cta {
+    width: 110rem;
   }
-  .memojis-container {
-    width: 90rem;
+  #testimonials-section {
+    width: 110rem;
+  }
+  .memoji {
+    display: none;
   }
 }
 .contact-us {

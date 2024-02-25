@@ -1,6 +1,6 @@
 @use "base";
 
-.cta-section {
+.cta {
   @include base.flex-center;
   flex-direction: column;
   box-sizing: border-box;

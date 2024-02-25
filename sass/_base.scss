@@ -1,7 +1,7 @@
 //screen sizes
-$tablet: 70rem;
-$mobile: 5rem;
-$laptop: 110rem;
+$tablet: 720px;
+$mobile: 500px;
+$laptop: 1100px;
 
 //COLOR STYLES
 $orange: #ffc600;
@@ -109,14 +109,21 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: $laptop) {
   :root {
     font-size: 8px;
+    overflow-x: hidden;
   }
-  .cta-content {
-    width: 90rem;
+  .cta {
+    width: 110rem;
   }
-  .memojis-container {
-    width: 90rem;
+  #testimonials-section {
+    width: 110rem;
   }
+  .memoji {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
 }
