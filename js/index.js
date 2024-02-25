@@ -14,10 +14,11 @@ $(function () {
   $(".projects")
     .last()
     .load("./common/projects.html", function () {
-      const titleElement = ".services .projects-container .projects-title";
+      const learnMoreLink = ".services .project-learn-more[href]";
+      const titleElement = ".services .projects-title";
       const imageElement = ".services ul li img";
       const liElement = ".services ul li";
-      const serviceTitle = ".service-li .project-text .project-title";
+      const serviceTitle = ".service-li .project-title";
       const serviceDescription = ".service-li .project-text .project-subject";
       $(titleElement).text("Our Services");
       $(imageElement).each(function (index) {
@@ -50,5 +51,6 @@ $(function () {
         width: "28rem",
         "margin-top": "3rem",
       });
+      $(learnMoreLink).attr('href','404.html');
     });
 });
