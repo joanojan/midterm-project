@@ -92,7 +92,7 @@
       flex-direction: column;
       .projects-title {
         margin: auto;
-        @include base.heading(base.$hThree);
+        @include base.heading(base.$hFour);
       }
 
       .projects-ul {
