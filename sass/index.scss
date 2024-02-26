@@ -4,102 +4,104 @@
 =========== HERO SECTION ===========
 */
 
-#hero-section {
-  margin: 22.2rem 0 0 0;
-  width: 140rem;
-  height: 65rem;
+@media only screen and (min-width: base.$tablet) {
+  #hero-section {
+    margin: 22.2rem 0 0 0;
+    width: 140rem;
+    height: 65rem;
 
-  //The text-content
-  #hero-section-container {
-    margin: auto;
-    width: 110rem;
-    height: 100%;
-    display: flex;
+    //The text-content
+    #hero-section-container {
+      margin: auto;
+      width: 110rem;
+      height: 100%;
+      display: flex;
 
-    #hero-article {
-      width: 53rem;
-      height: 42.2rem;
-      margin: 10.9rem 0 11.9rem 0;
+      #hero-article {
+        width: 53rem;
+        height: 42.2rem;
+        margin: 10.9rem 0 11.9rem 0;
 
-      #hero-article-title {
-        @include base.heading(base.$hOne);
-        margin-bottom: 3rem;
-      }
-
-      #hero-article-paragraph {
-        margin: 0;
-        width: 43.5rem;
-        @include base.font-regular(base.$medium, base.$body-regular);
-      }
-
-      #hero-article-contact-links {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 4rem;
-
-        #hero-article-button {
-          @include base.font-header-link;
-          @include base.button;
-          width: 15rem;
-          height: 5.2rem;
-          margin-right: 4rem;
-          margin-left: 0;
+        #hero-article-title {
+          @include base.heading(base.$hOne);
+          margin-bottom: 3rem;
         }
 
-        #hero-link-works {
+        #hero-article-paragraph {
           margin: 0;
-          align-self: center;
-          @include base.font-header-link;
-          @include base.font-regular;
-          line-height: 130%;
-        }
-      }
-    }
-
-    //the hero-images
-    #hero-section-image {
-      width: 57rem;
-      height: 65rem;
-      margin: 0;
-
-      #hero-images {
-        height: 100%;
-        position: relative;
-
-        #hero-image {
-          position: absolute;
-          z-index: 1;
-          width: 100%;
-          height: auto;
+          width: 43.5rem;
+          @include base.font-regular(base.$medium, base.$body-regular);
         }
 
-        .image-container-cardOne {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 19rem;
-          height: 216rem;
+        #hero-article-contact-links {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 4rem;
 
-          #credit-card-image {
-            @include base.img-container;
-            top: -4.7rem;
-            left: -9.4rem;
-            width: 198%;
+          #hero-article-button {
+            @include base.font-header-link;
+            @include base.button;
+            width: 15rem;
+            height: 5.2rem;
+            margin-right: 4rem;
+            margin-left: 0;
+          }
+
+          #hero-link-works {
+            margin: 0;
+            align-self: center;
+            @include base.font-header-link;
+            @include base.font-regular;
+            line-height: 130%;
           }
         }
+      }
 
-        .image-container-cardTwo {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 19rem;
-          height: 19.3rem;
+      //the hero-images
+      #hero-section-image {
+        width: 57rem;
+        height: 65rem;
+        margin: 0;
 
-          #thumbs-up-image {
-            @include base.img-container;
-            bottom: 4.4rem;
-            right: 8.3rem;
-            width: 182%;
+        #hero-images {
+          height: 100%;
+          position: relative;
+
+          #hero-image {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+          }
+
+          .image-container-cardOne {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 19rem;
+            height: 216rem;
+
+            #credit-card-image {
+              @include base.img-container;
+              top: -4.7rem;
+              left: -9.4rem;
+              width: 198%;
+            }
+          }
+
+          .image-container-cardTwo {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 19rem;
+            height: 19.3rem;
+
+            #thumbs-up-image {
+              @include base.img-container;
+              bottom: 4.4rem;
+              right: 8.3rem;
+              width: 182%;
+            }
           }
         }
       }
@@ -107,6 +109,54 @@
   }
 }
 
+@media only screen and (max-width: base.$tablet) {
+  #hero-section {
+    
+    #hero-section-container {
+      margin: auto;
+      display: flex;
+
+      #hero-article {
+
+        #hero-article-title {
+          @include base.heading(base.$hThree);
+        }
+
+        #hero-article-paragraph {
+          margin: 0;
+          @include base.font-regular(base.$medium, base.$body-regular);
+        }
+
+        #hero-article-contact-links {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 4rem;
+
+          #hero-article-button {
+            @include base.font-header-link;
+            @include base.button;
+            width: 15rem;
+            height: 5.2rem;
+            margin-right: 4rem;
+            margin-left: 0;
+          }
+
+          #hero-link-works {
+            margin: 0;
+            align-self: center;
+            @include base.font-header-link;
+            @include base.font-regular;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+  }
+
+  #hero-section-image {
+    display: none;
+  }
+}
 /*
 =========== CLIENTS SECTION ===========
 */
@@ -157,7 +207,7 @@
   margin-top: 20rem;
   padding-top: 6.9rem;
   padding-left: 4.7rem;
-  
+
   #memojis-container {
     box-sizing: border-box;
     position: absolute;
