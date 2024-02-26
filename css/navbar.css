@@ -111,18 +111,20 @@ body {
     background-color: #f4f6fc;
   }
   #nav-container #navbar {
+    width: 100%;
     border: 3px solid orange;
     height: 6rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50% 50%;
     justify-content: center;
     align-items: center;
     margin: 1rem;
   }
   #nav-container #navbar .navbar-ul {
     display: flex;
-    justify-self: flex-start;
     list-style: none;
+    justify-content: space-between;
     padding: 0;
   }
   #nav-container #navbar .navbar-ul .navbar-li {
@@ -165,9 +167,8 @@ body {
     background-color: #a2d6f9;
   }
   #nav-container #navbar #logo {
-    margin-right: 1rem;
+    margin-left: 1rem;
     grid-row: 1/span 2;
-    grid-column: 2;
   }
 }
 
