@@ -27,6 +27,9 @@ body {
   .memoji {
     display: none;
   }
+  .footer-container {
+    max-width: 100vw;
+  }
 }
 @media only screen and (max-width: 720px) {
   body {

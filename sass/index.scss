@@ -13,7 +13,7 @@
     //The text-content
     #hero-section-container {
       margin: auto;
-      width: 110rem;
+      width: 90rem;
       height: 100%;
       display: flex;
 
@@ -23,7 +23,7 @@
         margin: 10.9rem 0 11.9rem 0;
 
         #hero-article-title {
-          @include base.heading(base.$hOne);
+          @include base.heading(base.$hThree);
           margin-bottom: 3rem;
         }
 
