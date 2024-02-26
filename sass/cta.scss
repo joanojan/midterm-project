@@ -81,6 +81,7 @@
   
       .cta-title {
         @include base.heading(base.$hFour);
+        text-align:center;
       }
   
       .cta-p {
@@ -95,23 +96,22 @@
         .cta-input {
           border: none;
           box-sizing: border-box;
-          padding-left: 7rem;
-          width: 23rem;
-          height: 8rem;
+          padding-left: 6rem;
+          width: 22rem;
+          height: 6rem;
           background-image: url(../assets/newsletter/icon/mail.svg);
           background-repeat: no-repeat;
           background-position-y: center;
-          background-position-x: 3rem;
+          background-position-x: 1.6rem;
           @include base.font-regular(base.$dark);
-          margin-right: 2rem;
+          margin-right: 1rem;
         }
   
         .cta-submit {
           @include base.font-regular(base.$orange, base.$headline);
           @include base.button;
-          width: 19.8rem;
-          height: 8rem;
-          line-height: 130%;
+          width: 10rem;
+          height: 6rem;
         }
       }
     }

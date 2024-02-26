@@ -125,6 +125,7 @@ body {
   .projects,
   .services {
     margin: auto;
+    margin-top: 2rem;
     max-width: 100vw;
   }
   .projects .projects-container,

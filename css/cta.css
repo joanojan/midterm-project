@@ -136,6 +136,7 @@ body {
     color: #292e47;
     font-weight: bold;
     font-size: 24px;
+    text-align: center;
   }
   .cta .cta-content .cta-p {
     font-size: 2rem;
@@ -151,18 +152,18 @@ body {
   .cta .cta-content .cta-form .cta-input {
     border: none;
     box-sizing: border-box;
-    padding-left: 7rem;
-    width: 23rem;
-    height: 8rem;
+    padding-left: 6rem;
+    width: 22rem;
+    height: 6rem;
     background-image: url(../assets/newsletter/icon/mail.svg);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 3rem;
+    background-position-x: 1.6rem;
     font-size: 1.7rem;
     color: #292e47;
     line-height: 150%;
     letter-spacing: 0;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   .cta .cta-content .cta-form .cta-submit {
     font-size: 1.7rem;
@@ -178,9 +179,8 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
-    width: 19.8rem;
-    height: 8rem;
-    line-height: 130%;
+    width: 10rem;
+    height: 6rem;
   }
   .cta .cta-content .cta-form .cta-submit:hover {
     color: #292e47;
