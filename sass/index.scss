@@ -202,9 +202,9 @@
     margin-top: 6rem;
     height: 9.6rem;
     width: 110rem;
-    
+
     .client-ul {
-      border: .5rem solid base.$medium;
+      border: 0.5rem solid base.$medium;
       padding: 1rem;
       margin: 1rem;
       display: flex;
@@ -232,125 +232,209 @@
 /*
 ========== TESTIMONIALS SECTION ==========
 */
-
-#testimonials-section {
-  box-sizing: border-box;
-  position: relative;
-  margin: auto;
-  width: 132rem;
-  height: 62.2rem;
-  background-color: base.$dark;
-  margin-top: 20rem;
-  padding-top: 6.9rem;
-  padding-left: 4.7rem;
-
-  #memojis-container {
+//desktop + tablet
+@media only screen and (min-width: base.$tablet) {
+  #testimonials-section {
     box-sizing: border-box;
-    position: absolute;
-    left: 5.1rem;
-    top: 6.3rem;
-    width: 118.5rem;
-    height: 49.8rem;
+    position: relative;
+    margin: auto;
+    width: 132rem;
+    height: 62.2rem;
+    background-color: base.$dark;
+    margin-top: 20rem;
+    padding-top: 6.9rem;
+    padding-left: 4.7rem;
 
-    .memoji {
-      z-index: 1;
-      width: 15rem;
-      height: 15rem;
-    }
-
-    .memoji-top-left {
+    #memojis-container {
+      box-sizing: border-box;
       position: absolute;
-      top: 0;
-      left: 1.3rem;
+      left: 5.1rem;
+      top: 6.3rem;
+      width: 118.5rem;
+      height: 49.8rem;
+
+      .memoji {
+        z-index: 1;
+        width: 15rem;
+        height: 15rem;
+      }
+
+      .memoji-top-left {
+        position: absolute;
+        top: 0;
+        left: 1.3rem;
+      }
+
+      .memoji-top-right {
+        position: absolute;
+        top: 0;
+        right: 2.1rem;
+      }
+
+      .memoji-bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .memoji-bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     }
 
-    .memoji-top-right {
+    .testimonials-content {
       position: absolute;
-      top: 0;
-      right: 2.1rem;
-    }
-
-    .memoji-bottom-left {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    .memoji-bottom-right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
-
-  .testimonials-content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #testimonials-text-content {
-    box-sizing: border-box;
-    width: 62.1rem;
-    height: 38.2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    #testimonials-title {
-      @include base.heading(base.$hThree);
-      text-align: center;
-      color: white;
-      margin: 0;
-    }
-
-    #testimonials-client-review {
-      @include base.font-medium(base.$orange);
-      line-height: 160%;
-      text-align: center;
-      margin: 10rem 0 0 0;
-    }
-
-    #testimonials-client-information {
-      margin: 10rem 0 0 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
-      margin-bottom: 0;
-      justify-content: space-between;
-      width: 17.1rem;
-      height: 5rem;
+      flex-direction: column;
+      align-items: center;
+    }
 
-      #testimonial-profile-image {
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
+    #testimonials-text-content {
+      box-sizing: border-box;
+      width: 62.1rem;
+      height: 38.2rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #testimonials-title {
+        @include base.heading(base.$hThree);
+        text-align: center;
+        color: white;
         margin: 0;
       }
 
-      #testimonial-name-and-company {
+      #testimonials-client-review {
+        @include base.font-medium(base.$orange);
+        line-height: 160%;
+        text-align: center;
+        margin: 10rem 0 0 0;
+      }
+
+      #testimonials-client-information {
+        margin: 10rem 0 0 0;
         display: flex;
-        flex-direction: column;
+        margin-bottom: 0;
         justify-content: space-between;
+        width: 17.1rem;
+        height: 5rem;
 
-        width: 11.1rem;
-        height: 3.7rem;
-        margin: 0;
-        align-self: center;
-
-        #testimonial-name {
-          @include base.font-regular(base.$hover);
-          line-height: 100%;
+        #testimonial-profile-image {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
           margin: 0;
         }
 
-        #testimonial-company {
-          @include base.font-regular(base.$light, base.$text-regular);
-          text-decoration: none;
+        #testimonial-name-and-company {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          width: 11.1rem;
+          height: 3.7rem;
           margin: 0;
+          align-self: center;
+
+          #testimonial-name {
+            @include base.font-regular(base.$hover);
+            line-height: 100%;
+            margin: 0;
+          }
+
+          #testimonial-company {
+            @include base.font-regular(base.$light, base.$text-regular);
+            text-decoration: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+//mobile design
+@media only screen and (max-width: base.$tablet) {
+  #testimonials-section {
+    border: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    max-width: 100vw;
+    height: 40rem;
+    background-color: base.$dark;
+    margin-top: 10rem;
+
+    #memojis-container {
+      display: none;
+    }
+
+    .testimonials-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #testimonials-text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      #testimonials-title {
+        @include base.heading(base.$hFour);
+        text-align: center;
+        color: white;
+        margin-top: 0;
+      }
+
+      #testimonials-client-review {
+        @include base.font-regular(base.$orange, base.$text-regular);
+        text-align: center;
+        align-self: center;
+      }
+
+      #testimonials-client-information {
+        margin: 5rem 0 0 0;
+        display: flex;
+        margin-bottom: 0;
+        justify-content: space-between;
+        width: 17.1rem;
+        height: 5rem;
+
+        #testimonial-profile-image {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          margin: 0;
+        }
+
+        #testimonial-name-and-company {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 11.1rem;
+          height: 3.7rem;
+          margin: 0;
+          align-self: center;
+
+          #testimonial-name {
+            @include base.font-regular(base.$hover);
+            line-height: 100%;
+            margin: 0;
+          }
+
+          #testimonial-company {
+            @include base.font-regular(base.$light, base.$text-regular);
+            text-decoration: none;
+            margin: 0;
+          }
         }
       }
     }
