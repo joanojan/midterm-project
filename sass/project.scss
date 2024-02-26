@@ -1,10 +1,5 @@
 @use "base";
 
-* {
-  font-size: 10px;
-  margin: auto; //keeps the content in centered
-}
-
 body {
   background-color: base.$light;
   max-width: 144rem;
@@ -12,15 +7,20 @@ body {
 }
 
 .project-article {
+  margin: auto;
   margin-top: 26.8rem;
   width: 110rem;
-  
+  //tablet
+  @media only screen and (max-width: base.$laptop) {
+    width: 90rem;
+  }
+
   .project-title {
     margin-bottom: 2rem;
     height: 7rem;
     @include base.heading(base.$hOne);
   }
-  
+
   .project-info {
     display: flex;
     margin-bottom: 8rem;
@@ -32,24 +32,24 @@ body {
       margin: 0;
       @include base.font-medium(base.$medium);
     }
-  
+
     .project-date {
       @include base.font-regular(base.$dark, base.$body-regular);
       margin: 0;
-      
+
       .project-dateTime {
         @include base.font-regular(base.$medium, base.$body-regular);
       }
     }
   }
-  
+
   .project-article-image {
     height: 44.4rem;
     width: 100%;
     object-fit: cover;
     margin-bottom: 7rem;
   }
-  
+
   .project-article-text {
     @include base.font-regular(base.$medium, base.$body-regular);
   }
