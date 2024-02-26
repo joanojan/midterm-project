@@ -1,5 +1,6 @@
 @use "base";
 
+//desktop and tablet common css
 @media only screen and (min-width: base.$tablet) {
   #nav-container {
     width: 100%;
@@ -60,7 +61,6 @@
     
     #navbar {
       width: 100%;
-      border: 3px solid orange;
       height: 6rem;
       display: grid;
       grid-template-columns: 1fr 2fr;

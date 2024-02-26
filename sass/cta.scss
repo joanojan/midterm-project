@@ -1,60 +1,119 @@
 @use "base";
 
-.cta {
-  @include base.flex-center;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  width: 132rem;
-  height: 50rem;
-  margin-top: 13.6rem;
-  margin-bottom: 17rem;
-  background-color: base.$orange;
-
-  .cta-content {
-    display: flex;
+//desktop and tablet common css
+@media only screen and (min-with: base.$tablet) {
+  .cta {
+    @include base.flex-center;
     flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
     justify-content: center;
-
-    .cta-title {
-      @include base.heading(base.$hThree);
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-
-    .cta-p {
-      @include base.font-regular(base.$dark, base.$body-regular);
-      margin-top: 0;
-      margin-bottom: 5rem;
-    }
-
-    .cta-form {
-      margin-top: 0;
+    align-items: center;
+    width: 132rem;
+    height: 50rem;
+    margin-top: 13.6rem;
+    margin-bottom: 17rem;
+    background-color: base.$orange;
+  
+    .cta-content {
       display: flex;
-
-      .cta-input {
-        border: none;
-        box-sizing: border-box;
-        padding-left: 7rem;
-        width: 39.3rem;
-        height: 8rem;
-        background-image: url(../assets/newsletter/icon/mail.svg);
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 3rem;
-        @include base.font-regular(base.$dark);
-        margin-right: 2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .cta-title {
+        @include base.heading(base.$hThree);
+        margin-top: 0;
+        margin-bottom: 2rem;
       }
-
-      .cta-submit {
-        @include base.font-regular(base.$orange, base.$headline);
-        @include base.button;
-        width: 19.8rem;
-        height: 8rem;
-        line-height: 130%;
+  
+      .cta-p {
+        @include base.font-regular(base.$dark, base.$body-regular);
+        margin-top: 0;
+        margin-bottom: 5rem;
+      }
+  
+      .cta-form {
+        margin-top: 0;
+        display: flex;
+  
+        .cta-input {
+          border: none;
+          box-sizing: border-box;
+          padding-left: 7rem;
+          width: 39.3rem;
+          height: 8rem;
+          background-image: url(../assets/newsletter/icon/mail.svg);
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-position-x: 3rem;
+          @include base.font-regular(base.$dark);
+          margin-right: 2rem;
+        }
+  
+        .cta-submit {
+          @include base.font-regular(base.$orange, base.$headline);
+          @include base.button;
+          width: 19.8rem;
+          height: 8rem;
+          line-height: 130%;
+        }
       }
     }
-  }
+  }    
+}
+
+//mobile design 
+@media only screen and (max-width: base.$tablet) {
+  .cta {
+    @include base.flex-center;
+    max-width: 100vw;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: base.$orange;
+  
+    .cta-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .cta-title {
+        @include base.heading(base.$hFour);
+      }
+  
+      .cta-p {
+        @include base.font-regular(base.$dark, base.$body-regular);
+      }
+  
+      .cta-form {
+        margin-top: 0;
+        margin-bottom: 24px;
+        display: flex;
+  
+        .cta-input {
+          border: none;
+          box-sizing: border-box;
+          padding-left: 7rem;
+          width: 23rem;
+          height: 8rem;
+          background-image: url(../assets/newsletter/icon/mail.svg);
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-position-x: 3rem;
+          @include base.font-regular(base.$dark);
+          margin-right: 2rem;
+        }
+  
+        .cta-submit {
+          @include base.font-regular(base.$orange, base.$headline);
+          @include base.button;
+          width: 19.8rem;
+          height: 8rem;
+          line-height: 130%;
+        }
+      }
+    }
+  }  
 }
