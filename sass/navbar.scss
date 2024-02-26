@@ -1,45 +1,91 @@
 @use "base";
 
-#nav-container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  height: 12.2rem;
-  z-index: 3;
-  background-color: base.$light;
-  
-  #navbar {
-    height: 5.2rem;
-    width: 110rem;
+@media only screen and (min-width: base.$tablet) {
+  #nav-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 7rem auto 0 auto;
+    height: 12.2rem;
+    z-index: 3;
+    background-color: base.$light;
 
-    #logo {
-      margin: 0;
-    }
-
-    .navbar-ul {
+    #navbar {
+      height: 5.2rem;
+      width: 110rem;
       display: flex;
-      list-style: none;
+      align-items: center;
       justify-content: space-between;
-      width: 30rem;
-      .navbar-li {
-        .navbar-a {
-          @include base.font-header-link;
+      margin: 7rem auto 0 auto;
+
+      #logo {
+        margin: 0;
+      }
+
+      .navbar-ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 30rem;
+        .navbar-li {
+          .navbar-a {
+            @include base.font-header-link;
+          }
         }
       }
+
+      .contact {
+        @include base.font-header-link;
+        @include base.button;
+        width: 150px;
+        margin: 0;
+      }
     }
-    
-    .contact {
-      @include base.font-header-link;
-      @include base.button;
-      width: 150px;
-      margin: 0;
+  }
+}
+
+@media only screen and (max-width: base.$tablet) {
+  #nav-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 3;
+    background-color: base.$light;
+
+    #navbar {
+      height: 5.2rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+
+      .navbar-ul {
+        display: flex;
+        justify-self: flex-start;
+        list-style: none;
+        padding: 0;
+        .navbar-li {
+          margin-right: 1rem;
+          .navbar-a {
+            @include base.font-header-link;
+          }
+        }
+      }
+
+      .contact {
+        grid-row: 1;
+        @include base.font-header-link;
+        @include base.button;
+        width: 150px;
+        margin: 0;
+      }
     }
   }
 }
