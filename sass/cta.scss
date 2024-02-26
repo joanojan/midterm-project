@@ -1,7 +1,7 @@
 @use "base";
 
 //desktop and tablet common css
-@media only screen and (min-with: base.$tablet) {
+@media only screen and (min-width: base.$tablet) {
   .cta {
     @include base.flex-center;
     flex-direction: column;
