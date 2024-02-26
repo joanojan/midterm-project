@@ -2,10 +2,8 @@
 
 .progress {
     @include base.heading(base.$hOne);
-    margin: auto;
-    width: fit-content;
-    height: 100px;
-    padding: 100px;
+    text-align: center;
+    padding: 10px;
     margin-top: 20rem;
     color: white;
     background-color: base.$dark;

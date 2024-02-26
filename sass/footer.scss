@@ -10,6 +10,10 @@
     .footer-container {
       margin-top: 3rem;
       width: 110rem;
+      //tablet
+      @media only screen and (max-width: base.$laptop) {
+        width: 90rem;
+      }
       height: 11.2rem;
       display: flex;
       justify-content: space-between;
@@ -88,7 +92,7 @@
         justify-content: space-between;
         background-color: base.$tapped;
         height: 100%;
-        
+
         .footer-li {
           .footer-a {
             width: 100%;
