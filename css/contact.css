@@ -157,29 +157,28 @@ body {
     color: #292e47;
     font-weight: bold;
     font-size: 40px;
+    background-color: #d1edff;
     text-align: center;
     margin: 10rem 0 1rem 0;
-    background-color: #d1edff;
   }
   .form {
-    box-sizing: border-box;
     display: flex;
     margin: 1rem;
     flex-direction: column;
     width: 100vw;
   }
-  .form .form-row {
+  .form .form-label {
+    display: flex;
+    flex-direction: column;
+  }
+  .form .form-row,
+  .form .form-field-column {
     margin: auto;
     width: 90%;
   }
   .form .form-column {
     display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-  }
-  .form .form-column .form-field-column {
-    margin: 1rem;
-    width: 50%;
+    flex-direction: column;
   }
   .form .form-label {
     margin: 0 0 0 1rem;
@@ -189,13 +188,18 @@ body {
     letter-spacing: 0;
   }
   .form .form-input {
+    font-size: 1.7rem;
+    color: #6b708d;
+    line-height: 150%;
+    letter-spacing: 0;
     margin: auto;
-    background-color: #6b708d;
-    opacity: 0.1;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     height: 7rem;
     margin-bottom: 4rem;
+  }
+  .form .form-input:focus {
+    background-color: #d1edff;
   }
   .form #message {
     height: 20rem;
