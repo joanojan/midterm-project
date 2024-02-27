@@ -1,0 +1,137 @@
+//screen-size width smaller than 720px: mobile design
+//tablet design: up to 1100px
+$tablet: 720px;
+$laptop: 1100px;
+
+//COLOR STYLES
+$orange: #ffc600;
+$yellow: #fce300;
+$default: #072ac8;
+$accent: #43d2ff;
+$hover: #a2d6f9;
+$tapped: #d1edff;
+$dark: #292e47;
+$medium: #6b708d;
+$light: #f4f6fc;
+$light-blue: #ecf7ff;
+
+//Headings font-size
+$hOne: 60;
+$hTwo: 50;
+$hThree: 40;
+$hFour: 24;
+
+//Body font-size
+$body-medium: 2.4rem;
+$body-regular: 2rem;
+$headline: 1.7rem;
+$text-regular: 1.3rem;
+
+//FONT Styles
+@mixin font-medium($color: $dark) {
+  font-size: 2.4rem;
+  color: $color;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+@mixin font-regular($color: $medium, $size: $headline) {
+  font-size: $size;
+  color: $color;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+//headings style $number = font-size in pixels
+@mixin heading($number: 10) {
+  color: $dark;
+  font-weight: bold;
+  font-size: $number * 1px;
+}
+
+//links
+@mixin font-header-link($color: $medium) {
+  &:hover {
+    color: $default;
+  }
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: $color;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+
+//button
+@mixin button {
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  &:hover {
+    color: $dark;
+    background-color: $hover;
+  }
+  background-color: $default;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+//centering flex display
+@mixin flex-center {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+//the image container for the cards in the hero section
+@mixin img-container {
+  position: relative;
+  object-fit: contain;
+  height: auto;
+  z-index: 2;
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  a[href] {
+    cursor: pointer;
+  }
+}
+
+body {
+  background-color: $light;
+  display: grid;
+  justify-content: center;
+}
+
+//common css for tablet and mobile
+@media only screen and (max-width: $laptop) {
+  :root {
+    font-size: 8px;
+    overflow-x: hidden;
+  }
+  .cta {
+    width: 110rem;
+  }
+  #testimonials-section {
+    width: 110rem;
+  }
+  .memoji {
+    display: none;
+  }
+  .footer-container {
+    max-width: 100vw;
+  }
+}
+
+//mobile design ->> part of it!
+@media only screen and (max-width: $tablet) {
+  body {
+    max-width: 100vw;
+  }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/navbar.css"/>
+    <link rel="stylesheet" href="./css/projects.css"/>
+    <link rel="stylesheet" href="./css/cta.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+
+    <title>Home page</title>
+  </head>
+  <body>
+    <!--Common html is loaded with jQuery (common folder) -->
+    <div id="nav-container"></div>
+
+    <!--The hero section is the main part of this page and links to other sections and pages -->
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <article id="hero-article">
+          <h1 id="hero-article-title">
+            Empower Your Business With Stunning Design!
+          </h1>
+          <p id="hero-article-paragraph">
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
+          <div id="hero-article-contact-links">
+            <a id="hero-article-button" href="contact.html">Get in touch</a>
+            <a id="hero-link-works" href="index.html#services-section"
+              >See our work</a
+            >
+          </div>
+        </article>
+        <aside id="hero-section-image">
+          <div id="hero-images">
+            <img
+              id="hero-image"
+              src="./assets/hero-section/hero-image.png"
+              alt="Smiling guy with arms crossed wearing a smart-watch."
+            />
+            <div class="image-container-cardOne">
+              <img
+                id="credit-card-image"
+                src="./assets/hero-section/card-1.png"
+                alt="credit card"
+              />
+            </div>
+            <div class="image-container-cardTwo">
+              <img
+                id="thumbs-up-image"
+                src="./assets/hero-section/card-2.png"
+                alt="Thumbs-up icon"
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!--The clients section: top companies using 'our' services -->
+    <section id="client-section">
+      <ul class="client-ul">
+        <li class="client-li">
+          <a class="client-link" href="https://www.airbnb.com/" target="_blank">
+            <img
+              src="./assets/logos/airbnb-logo.svg"
+              alt="airbnb"
+              class="logo"
+            />
+          </a>
+        </li>
+        <li class="client-li">
+          <a href="https://google.com" class="client-link" target="_blank">
+            <img
+              src="./assets/logos/google-logo.svg"
+              alt="google"
+              class="logo"
+            />
+          </a>
+        </li>
+        <li class="client-li">
+          <a href="https://microsoft.com" class="client-link" target="_blank">
+            <img
+              src="./assets/logos/microsoft-logo.svg"
+              alt="microsoft"
+              class="logo"
+            />
+          </a>
+        </li>
+        <li class="client-li">
+          <a href="https://fedex.com" class="client-link" target="_blank">
+            <img src="./assets/logos/fedex-logo.svg" alt="fedex" class="logo" />
+          </a>
+        </li>
+        <li class="client-li">
+          <a href="https://amazon.com" class="client-link" target="_blank">
+            <img
+              src="./assets/logos/amazon-logo.svg"
+              alt="amazon"
+              class="logo"
+            />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- projects -> common folder -->
+    <div class="projects" id="projects-section"></div>
+
+    <!-- Testimonials: feedback and bad ;-) reviews -->
+    <section id="testimonials-section">
+      <!-- emojis with z-index=1 and position: absolute in css -->
+      <div id="memojis-container">
+        <img
+          src="./assets/testimonial-section/memoji-1.png"
+          alt="crossing-fingers person"
+          class="memoji memoji-top-left"
+        />
+        <img
+          src="./assets/testimonial-section/memoji-2.png"
+          alt="winking one"
+          class="memoji memoji-top-right"
+        />
+        <img
+          src="./assets/testimonial-section/memoji-3.png"
+          alt="like-thumbs up"
+          class="memoji memoji-bottom-left"
+        />
+        <img
+          src="./assets/testimonial-section/memoji-4.png"
+          alt="partying"
+          class="memoji memoji-bottom-right"
+        />
+      </div>
+
+      <div class="testimonials-content">
+        <div id="testimonials-text-content">
+          <h3 id="testimonials-title">Hear What Our Clients Have to Say</h3>
+          <p id="testimonials-client-review">
+            “Circle helped us through every stage of our startup.<br />We really
+            enjoyed working with you.”
+          </p>
+
+          <div id="testimonials-client-information">
+            <img
+              src="./assets/testimonial-section/profile.png"
+              alt="client id photo"
+              id="testimonial-profile-image"
+            />
+            <div id="testimonial-name-and-company">
+              <p id="testimonial-name">Kristin Watson</p>
+              <a href="https://booking.com" id="testimonial-company">
+                Booking.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: what 'we' do! -->
+    <section class="services projects" id="services-section"></section>
+
+    <!-- CTA section: subscribe and get mailed with news and offers. Also in the common folder -->
+    <div class="cta" id="#cta-section"></div>
+
+    <!-- Footer is also common to all pages. -->
+    <div class="footer" id="nav-footer"></div>
+
+    <!-- main.js ->  common html to be displayed with jQuery. -->
+
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

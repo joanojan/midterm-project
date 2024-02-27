@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Contact page</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <div id="nav-container"></div>
+
+    <!--form title-->
+    <h1 class="contact-us">Contact Us</h1>
+
+    <!--form-->
+    <form class="form" onsubmit="alert('Thanks for contacting us!')">
+      <div class="form-row">
+        <label class="form-label" for="name">Full Name *</label>
+        <input
+          required
+          minlength="2"
+          maxlength="50"
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div class="form-column">
+        <div class="form-field-column">
+          <label class="form-label" for="email">Email</label>
+          <input
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="form-field-column">
+          <label for="phone" class="form-label">Phone</label>
+          <input
+            pattern="[0-9]{9}"
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            class="form-input"
+          />
+        </div>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="message">Message</label>
+        <textarea
+          maxlength="1000"
+          class="form-input"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        >
+          Write your message here ....
+        </textarea>
+      </div>
+      <input class="contact-form-submit" type="submit" value="Submit" />
+    </form>
+
+    <!--footer-->
+    <div class="footer" id="nav-footer"></div>
+
+    <!--scripts-->
+    <script src="./js/common.js" type="module"></script>
+  </body>
+</html>
