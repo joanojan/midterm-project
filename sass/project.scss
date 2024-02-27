@@ -13,7 +13,7 @@
       width: 90rem;
     }
     
-    .project-title {
+    .project-project-title {
       margin-bottom: 2rem;
       height: 7rem;
       @include base.heading(base.$hOne);
@@ -42,7 +42,7 @@
     }
     
     .project-article-image {
-      width: 10vw;
+      width: 110rem;
       object-fit: contain;
     }
     
@@ -53,7 +53,7 @@
 }
   //mobile
   @media only screen and (max-width: base.$tablet) {
-  .project-title {
+  .project-project-title {
     text-align: center;
     background-color: base.$tapped;
     margin-top: 10rem;

@@ -23,7 +23,7 @@ getProjects().then(function (projects) {
 });
 
 function renderProject(project) {
-  const title = document.querySelector(".project-title");
+  const title = document.querySelector(".project-project-title");
   title.textContent = project.name;
   $(".project-article-subject").text(project.description);
   $(".project-dateTime").text(project.completed_on);
@@ -41,7 +41,7 @@ $(function () {
       if (index === 1) $(this).attr("src", "./assets/projects-section/5.jpg");
       if (index === 2) $(this).attr("src", "./assets/projects-section/6.jpg");
     });
-    $(".project-title").each(function (index) {
+    $(".projects-project-title").each(function (index) {
       if (index === 0) $(this).text("Orbit");
       if (index === 1) $(this).text("Purify");
       if (index === 2) $(this).text("CriptoPie");
@@ -51,6 +51,6 @@ $(function () {
       if (index === 1) $(this).text("UI/UX Design");
       if (index === 2) $(this).text("App Development");
     });
-    $(".project-learn-more[href]").attr("href", "404.html");
+    $(".project-learn-more[href]").attr("href", "workInProgress.html");
   });
 });

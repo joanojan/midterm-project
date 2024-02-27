@@ -49,7 +49,7 @@ body {
   }
 }
 @media only screen and (min-width: 720px) {
-  .project-article .project-title {
+  .project-article .project-project-title {
     margin-bottom: 2rem;
     height: 7rem;
     color: #292e47;
@@ -84,7 +84,7 @@ body {
     letter-spacing: 0;
   }
   .project-article .project-article-image {
-    width: 10vw;
+    width: 110rem;
     object-fit: contain;
   }
   .project-article .project-article-text {
@@ -95,7 +95,7 @@ body {
   }
 }
 @media only screen and (max-width: 720px) {
-  .project-title {
+  .project-project-title {
     text-align: center;
     background-color: #d1edff;
     margin-top: 10rem;
