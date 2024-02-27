@@ -41,7 +41,7 @@ $(function () {
       if (index === 1) $(this).attr("src", "./assets/projects-section/5.jpg");
       if (index === 2) $(this).attr("src", "./assets/projects-section/6.jpg");
     });
-    $(".projects-project-title").each(function (index) {
+    $(".project-title").each(function (index) {
       if (index === 0) $(this).text("Orbit");
       if (index === 1) $(this).text("Purify");
       if (index === 2) $(this).text("CriptoPie");
