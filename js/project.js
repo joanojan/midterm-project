@@ -5,7 +5,7 @@ import { getProjects, errorCallback } from "./utils.js";
  */
 
 
-//get and render the first project
+//Render project filtered by id passed on the url
 getProjects().then(function (projects) {
   try {
     const queryString = window.location.search;
@@ -22,6 +22,7 @@ getProjects().then(function (projects) {
   }
 });
 
+//render the project
 function renderProject(project) {
   const title = document.querySelector(".project-project-title");
   title.textContent = project.name;
@@ -31,7 +32,7 @@ function renderProject(project) {
   $(".project-article-text").html(project.content);
 }
 
-//other projects
+//other projects -> inject html 
 $(function () {
   $(".projects").load("./common/projects.html", function () {
     $(".projects ul div").removeClass("icon-wrapper");
@@ -41,7 +42,7 @@ $(function () {
       if (index === 1) $(this).attr("src", "./assets/projects-section/5.jpg");
       if (index === 2) $(this).attr("src", "./assets/projects-section/6.jpg");
     });
-    $(".projects-project-title").each(function (index) {
+    $(".project-title").each(function (index) {
       if (index === 0) $(this).text("Orbit");
       if (index === 1) $(this).text("Purify");
       if (index === 2) $(this).text("CriptoPie");
