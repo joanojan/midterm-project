@@ -1,56 +1,93 @@
 @use "base";
 
-* {
-  font-size: 10px;
-  margin: auto; //keeps the content in centered
-}
+//desktop and tablet
+@media only screen and (min-width:base.$tablet){
 
-body {
-  background-color: base.$light;
-  max-width: 144rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.project-article {
-  margin-top: 26.8rem;
-  width: 110rem;
-  
-  .project-title {
-    margin-bottom: 2rem;
-    height: 7rem;
-    @include base.heading(base.$hOne);
+  .project-article {
+    margin: auto;
+    margin-top: 26.8rem;
+    width: 110rem;
+    
+    //tablet
+    @media only screen and (max-width: base.$laptop) {
+      width: 90rem;
+    }
+    
+    .project-project-title {
+      margin-bottom: 2rem;
+      height: 7rem;
+      @include base.heading(base.$hOne);
+    }
+    
+    .project-info {
+      display: flex;
+      margin-bottom: 8rem;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      
+      .project-article-subject {
+        margin: 0;
+        @include base.font-medium(base.$medium);
+      }
+      
+      .project-date {
+        @include base.font-regular(base.$dark, base.$body-regular);
+        margin: 0;
+        
+        .project-dateTime {
+          @include base.font-regular(base.$medium, base.$body-regular);
+        }
+      }
+    }
+    
+    .project-article-image {
+      width: 110rem;
+      object-fit: contain;
+    }
+    
+    .project-article-text {
+      @include base.font-regular(base.$medium, base.$body-regular);
+    }
   }
-  
+}
+  //mobile
+  @media only screen and (max-width: base.$tablet) {
+  .project-project-title {
+    text-align: center;
+    background-color: base.$tapped;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    @include base.heading(base.$hThree);
+  }
+
   .project-info {
     display: flex;
-    margin-bottom: 8rem;
-    width: 100%;
     justify-content: space-between;
+    margin: 0 2rem;
     align-items: center;
 
     .project-article-subject {
-      margin: 0;
-      @include base.font-medium(base.$medium);
+      @include base.font-medium(base.$headline);
     }
-  
     .project-date {
-      @include base.font-regular(base.$dark, base.$body-regular);
-      margin: 0;
-      
+      @include base.font-regular(base.$dark, base.$headline);
       .project-dateTime {
-        @include base.font-regular(base.$medium, base.$body-regular);
+        @include base.font-regular(base.$medium, base.$headline);
       }
     }
   }
-  
+
   .project-article-image {
-    height: 44.4rem;
-    width: 100%;
+    display: block;
+    margin: 0 2rem;
+    width: 95vw;
+    height: 20rem;
     object-fit: cover;
-    margin-bottom: 7rem;
   }
-  
+
   .project-article-text {
+    margin: 2rem;
     @include base.font-regular(base.$medium, base.$body-regular);
   }
 }

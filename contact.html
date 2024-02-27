@@ -25,6 +25,9 @@
       <div class="form-row">
         <label class="form-label" for="name">Full Name *</label>
         <input
+          required
+          minlength="2"
+          maxlength="50"
           class="form-input"
           type="text"
           id="name"
@@ -36,6 +39,7 @@
         <div class="form-field-column">
           <label class="form-label" for="email">Email</label>
           <input
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             class="form-input"
             type="email"
             id="email"
@@ -46,6 +50,7 @@
         <div class="form-field-column">
           <label for="phone" class="form-label">Phone</label>
           <input
+            pattern="[0-9]{9}"
             type="tel"
             id="phone"
             placeholder="Enter your phone number"
@@ -55,12 +60,16 @@
       </div>
       <div class="form-row">
         <label class="form-label" for="message">Message</label>
-        <input
-          type="text"
-          id="message"
-          placeholder="Write your message here ...."
+        <textarea
+          maxlength="1000"
           class="form-input"
-        />
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        >
+          Write your message here ....
+        </textarea>
       </div>
       <input class="contact-form-submit" type="submit" value="Submit" />
     </form>

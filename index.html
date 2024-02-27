@@ -8,11 +8,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/projects.css" />
-    <link rel="stylesheet" href="./css/cta.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/navbar.css"/>
+    <link rel="stylesheet" href="./css/projects.css"/>
+    <link rel="stylesheet" href="./css/cta.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
 
     <title>Home page</title>
   </head>
@@ -116,6 +116,7 @@
 
     <!-- Testimonials: feedback and bad ;-) reviews -->
     <section id="testimonials-section">
+      <!-- emojis with z-index=1 and position: absolute in css -->
       <div id="memojis-container">
         <img
           src="./assets/testimonial-section/memoji-1.png"
@@ -137,12 +138,16 @@
           alt="partying"
           class="memoji memoji-bottom-right"
         />
+      </div>
+
+      <div class="testimonials-content">
         <div id="testimonials-text-content">
           <h3 id="testimonials-title">Hear What Our Clients Have to Say</h3>
           <p id="testimonials-client-review">
             “Circle helped us through every stage of our startup.<br />We really
             enjoyed working with you.”
           </p>
+
           <div id="testimonials-client-information">
             <img
               src="./assets/testimonial-section/profile.png"
@@ -151,9 +156,9 @@
             />
             <div id="testimonial-name-and-company">
               <p id="testimonial-name">Kristin Watson</p>
-              <a href="https://booking.com" id="testimonial-company"
-                >Booking.com</a
-              >
+              <a href="https://booking.com" id="testimonial-company">
+                Booking.com
+              </a>
             </div>
           </div>
         </div>
@@ -172,7 +177,6 @@
     <!-- main.js ->  common html to be displayed with jQuery. -->
 
     <script src="./js/common.js"></script>
-
     <script src="./js/index.js"></script>
   </body>
 </html>

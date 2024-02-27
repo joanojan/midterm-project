@@ -1,38 +1,103 @@
 @use "base";
 
-#nav-container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  height: 12.2rem;
-  z-index: 3;
-  background-color: base.$light;
-  
-  #navbar {
-    height: 5.2rem;
-    width: 144rem;
+//desktop and tablet common css
+@media only screen and (min-width: base.$tablet) {
+  #nav-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
+    height: 12.2rem;
+    z-index: 3;
+    background-color: base.$light;
 
-    .navbar-ul {
+    #navbar {
+      height: 5.2rem;
+      width: 110rem;
+      //tablet
+      @media only screen and (max-width: base.$laptop) {
+        width: 90rem;
+      }
       display: flex;
-      list-style: none;
+      align-items: center;
       justify-content: space-between;
-      min-width: 35%;
-      .navbar-li {
-        .navbar-a {
-          @include base.font-header-link;
+      margin: 7rem auto 0 auto;
+
+      #logo {
+        margin: 0;
+      }
+
+      .navbar-ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 30rem;
+        .navbar-li {
+          .navbar-a {
+            @include base.font-header-link;
+          }
         }
       }
+
+      .contact {
+        @include base.font-header-link;
+        @include base.button;
+        width: 150px;
+        margin: 0;
+      }
     }
-    
-    .contact {
-      @include base.font-header-link;
-      @include base.button;
-      width: 150px;
+  }
+}
+
+//mobile design
+@media only screen and (max-width: base.$tablet) {
+  #nav-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 3;
+    background-color: base.$light;
+
+    #navbar {
+      width: 100%;
+      height: 6rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 50% 50%;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+
+      .navbar-ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0;
+        .navbar-li {
+          margin-right: 1rem;
+          .navbar-a {
+            @include base.font-header-link;
+          }
+        }
+      }
+
+      .contact {
+        grid-row: 1;
+        @include base.font-header-link;
+        @include base.button;
+        width: 100%;
+        margin: 0;
+      }
+
+      #logo {
+        margin-left: 1rem;
+        grid-row: 1 / span 2;
+      }
     }
   }
 }
