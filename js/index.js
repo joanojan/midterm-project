@@ -51,6 +51,6 @@ $(function () {
         width: "28rem",
         "margin-top": "3rem",
       });
-      $(learnMoreLink).attr('href','404.html');
+      $(learnMoreLink).attr('href','workInProgress.html');
     });
 });

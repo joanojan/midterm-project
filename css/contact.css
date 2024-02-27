@@ -101,6 +101,7 @@ body {
     margin-bottom: 1rem;
   }
   .form .form-input {
+    padding: 2rem;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -122,7 +123,6 @@ body {
     color: #6b708d;
     line-height: 150%;
     letter-spacing: 0;
-    padding-left: 2rem;
   }
   .form .contact-form-submit {
     box-sizing: border-box;

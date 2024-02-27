@@ -37,14 +37,16 @@ body {
   }
 }
 .progress {
+  margin: auto;
+  width: 70vw;
   color: #292e47;
   font-weight: bold;
   font-size: 60px;
   text-align: center;
-  padding: 10px;
+  padding: 3rem;
   margin-top: 20rem;
   color: white;
-  background-color: #292e47;
+  background-color: #072ac8;
 }
 
-/*# sourceMappingURL=404.css.map */
+/*# sourceMappingURL=workInProgress.css.map */
