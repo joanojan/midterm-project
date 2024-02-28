@@ -1,6 +1,8 @@
 /**
- * utils module
+ *          utils module
+ *
  */
+
 const errorCallback = function (error) {
   console.error("Error: ", error);
 };
@@ -17,4 +19,18 @@ async function getProjects() {
   }
 }
 
-export { getProjects, errorCallback };
+function removeSpaces(...words) {
+  return words.map((word) => word.trim());
+}
+
+function validateEmail(mail) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) return true;
+  return false;
+}
+
+function validatePhone(phone) {
+  if (/[0-9]{3}-[0-9]{3}-[0-9]{3}/.test(phone)) return true;
+  return false;
+}
+
+export { getProjects, errorCallback, removeSpaces, validateEmail, validatePhone };
