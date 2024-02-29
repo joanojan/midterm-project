@@ -79,7 +79,7 @@
   }
 }
 
-//tablet:
+//tablet ******************************************************
 @media only screen and (max-width: base.$laptop) and (min-width: base.$tablet) {
   .contact-us {
     @include base.heading(base.$hThree);
@@ -96,7 +96,7 @@
   }
 }
 
-//mobile
+//mobile **************************************************
 @media only screen and (max-width: base.$tablet) {
   .contact-us {
     @include base.heading(base.$hThree);

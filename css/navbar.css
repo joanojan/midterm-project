@@ -183,8 +183,9 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
-    width: 100%;
-    margin: 0;
+    width: 40%;
+    margin-right: 3rem;
+    justify-self: flex-end;
   }
   #nav-container #navbar .contact:hover {
     color: #072ac8;
