@@ -14,7 +14,7 @@ $(".form").on("submit", function (event) {
   const name = $("#name").first().val();
   const phone = $("#phone").first().val();
 
-  let nameTrim, emailTrim, phoneTrim, messageTrim;
+  let nameTrim, messageTrim;
   [nameTrim, messageTrim] = removeSpaces(name, message);
 
   let allValid = true;
@@ -45,5 +45,7 @@ $(".form").on("submit", function (event) {
 
   if (!allValid) {
     event.preventDefault();
-  } 
+  } else {
+    alert("Succes!");
+  }
 });

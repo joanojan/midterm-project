@@ -45,18 +45,6 @@ body {
     margin-bottom: 8rem;
     width: 110rem;
   }
-}
-@media only screen and (min-width: 720px) and (max-width: 1100px) {
-  .contact-us {
-    color: #292e47;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    background-color: #d1edff;
-    margin: 13rem 0 3rem 0;
-  }
-}
-@media only screen and (min-width: 720px) {
   .form {
     box-sizing: border-box;
     display: flex;
@@ -64,14 +52,6 @@ body {
     width: 110rem;
     margin-bottom: 15.4;
   }
-}
-@media only screen and (min-width: 720px) and (max-width: 1100px) {
-  .form {
-    margin: auto;
-    width: 90rem;
-  }
-}
-@media only screen and (min-width: 720px) {
   .form .form-row {
     display: flex;
     flex-direction: column;
@@ -85,15 +65,9 @@ body {
     margin: 0;
     width: 53rem;
   }
-}
-@media only screen and (min-width: 720px) and (max-width: 1100px) {
-  .form .form-column .form-field-column {
-    margin: 1rem;
-  }
-}
-@media only screen and (min-width: 720px) {
   .form .form-label {
     margin-left: 0;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: #6b708d;
     line-height: 150%;
@@ -102,6 +76,7 @@ body {
   }
   .form .form-input {
     padding: 2rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -115,10 +90,8 @@ body {
   .form .form-input:focus {
     background-color: #d1edff;
   }
-  .form .form-input:invalid {
-    border: 2px dashed red;
-  }
   .form .valid {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -129,6 +102,7 @@ body {
     height: 20rem;
   }
   .form .form-input::placeholder {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -162,6 +136,23 @@ body {
     color: #072ac8;
   }
 }
+@media only screen and (max-width: 1100px) and (min-width: 720px) {
+  .contact-us {
+    color: #292e47;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    background-color: #d1edff;
+    margin: 13rem 0 3rem 0;
+  }
+  .form {
+    margin: auto;
+    width: 90rem;
+  }
+  .form-field-column {
+    margin: 1rem;
+  }
+}
 @media only screen and (max-width: 720px) {
   .contact-us {
     color: #292e47;
@@ -192,6 +183,7 @@ body {
   }
   .form .form-label {
     margin: 0 0 0 1rem;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: #6b708d;
     line-height: 150%;
@@ -199,6 +191,7 @@ body {
   }
   .form .form-input {
     padding: 2rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -211,10 +204,8 @@ body {
   .form .form-input:focus {
     background-color: #d1edff;
   }
-  .form .form-input:invalid {
-    border: 2px dashed red;
-  }
   .form .valid {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -225,11 +216,11 @@ body {
     height: 20rem;
   }
   .form .form-input::placeholder {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
     letter-spacing: 0;
-    padding-left: 2rem;
   }
   .form .contact-form-submit {
     box-sizing: border-box;

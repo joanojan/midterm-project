@@ -1,15 +1,9 @@
 @use "base";
 
+//common css (desktop + tablet + mobile)
 @media only screen and (min-width: base.$tablet) {
   .contact-us {
     @include base.heading(base.$hOne);
-    //tablet
-    @media only screen and (max-width: base.$laptop) {
-      @include base.heading(base.$hThree);
-      text-align: center;
-      background-color: base.$tapped;
-      margin: 13rem 0 3rem 0;
-    }
     margin-top: 26.8rem;
     margin-bottom: 8rem;
     width: 110rem;
@@ -20,11 +14,6 @@
     display: flex;
     flex-direction: column;
     width: 110rem;
-    //tablet
-    @media only screen and (max-width: base.$laptop) {
-      margin: auto;
-      width: 90rem;
-    }
     margin-bottom: 15.4;
 
     .form-row {
@@ -41,10 +30,6 @@
       .form-field-column {
         margin: 0;
         width: 53rem;
-        //tablet
-        @media only screen and (max-width: base.$laptop) {
-          margin: 1rem;
-        }
       }
     }
 
@@ -59,9 +44,9 @@
       &:focus {
         background-color: base.$tapped;
       }
-      &:invalid {
-        border: 2px dashed red;
-      }      
+      // &:invalid {
+      //   border: 2px dashed red;
+      // }
       @include base.font-regular;
       box-sizing: border-box;
       width: 100%;
@@ -91,6 +76,23 @@
       width: 100%;
       margin-bottom: 15.4rem;
     }
+  }
+}
+
+//tablet:
+@media only screen and (max-width: base.$laptop) and (min-width: base.$tablet) {
+  .contact-us {
+    @include base.heading(base.$hThree);
+    text-align: center;
+    background-color: base.$tapped;
+    margin: 13rem 0 3rem 0;
+  }
+  .form {
+    margin: auto;
+    width: 90rem;
+  }
+  .form-field-column {
+      margin: 1rem;
   }
 }
 
@@ -135,9 +137,9 @@
       &:focus {
         background-color: base.$tapped;
       }
-      &:invalid {
-        border: 2px dashed red;
-      }
+      // &:invalid {
+      //   border: 2px dashed red;
+      // }
       @include base.font-regular;
       margin: 0 auto 4rem auto;
       box-sizing: border-box;
@@ -156,7 +158,6 @@
 
     .form-input::placeholder {
       @include base.font-regular;
-      padding-left: 2rem;
     }
 
     .contact-form-submit {

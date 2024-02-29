@@ -36,6 +36,7 @@ $text-regular: 1.3rem;
 }
 
 @mixin font-regular($color: $medium, $size: $headline) {
+  font-family: "Roboto", sans-serif;
   font-size: $size;
   color: $color;
   line-height: 150%;
@@ -50,12 +51,12 @@ $text-regular: 1.3rem;
 }
 
 //links
-@mixin font-header-link($color: $medium) {
+@mixin font-header-link($color: $medium, $font-size: 1.7rem) {
   &:hover {
     color: $default;
   }
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: $font-size;
   color: $color;
   line-height: 130%;
   letter-spacing: 0;
