@@ -10,10 +10,6 @@
     .footer-container {
       margin-top: 3rem;
       width: 110rem;
-      //tablet
-      @media only screen and (max-width: base.$laptop) {
-        width: 90rem;
-      }
       height: 11.2rem;
       display: flex;
       justify-content: space-between;
@@ -62,7 +58,14 @@
   }
 }
 
-//mobile design
+// tablet *****************************************************
+@media only screen and (max-width: base.$laptop) and (min-width: base.$tablet) {
+  .footer-container {
+    width: 90rem;
+  }
+}
+
+//mobile design ***********************************************
 @media only screen and (max-width: base.$tablet) {
   .footer {
     max-width: 100vw;

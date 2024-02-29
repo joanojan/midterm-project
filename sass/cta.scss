@@ -62,7 +62,12 @@
   }    
 }
 
-//mobile design 
+// tablet *****************************************************
+@media only screen and (max-width: base.$laptop) and (min-width: base.$tablet) {
+  //nothing to change
+}
+
+//mobile design **********************************************
 @media only screen and (max-width: base.$tablet) {
   .cta {
     @include base.flex-center;

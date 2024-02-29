@@ -1,58 +1,60 @@
 @use "base";
 
-//desktop and tablet
-@media only screen and (min-width:base.$tablet){
-
+//common css ************************************
+@media only screen and (min-width: base.$tablet) {
   .project-article {
     margin: auto;
     margin-top: 26.8rem;
     width: 110rem;
-    
-    //tablet
-    @media only screen and (max-width: base.$laptop) {
-      width: 90rem;
-    }
-    
+
     .project-project-title {
       margin-bottom: 2rem;
       height: 7rem;
       @include base.heading(base.$hOne);
     }
-    
+
     .project-info {
       display: flex;
       margin-bottom: 8rem;
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      
+
       .project-article-subject {
         margin: 0;
         @include base.font-medium(base.$medium);
       }
-      
+
       .project-date {
         @include base.font-regular(base.$dark, base.$body-regular);
         margin: 0;
-        
+
         .project-dateTime {
           @include base.font-regular(base.$medium, base.$body-regular);
         }
       }
     }
-    
+
     .project-article-image {
       width: 110rem;
       object-fit: contain;
     }
-    
+
     .project-article-text {
       @include base.font-regular(base.$medium, base.$body-regular);
     }
   }
 }
-  //mobile
-  @media only screen and (max-width: base.$tablet) {
+
+//tablet ***************************************************
+@media only screen and (max-width: base.$laptop) and (min-width: base.$tablet) {
+  .project-article {
+    width: 90rem;
+  }
+}
+
+//mobile **************************************************
+@media only screen and (max-width: base.$tablet) {
   .project-project-title {
     text-align: center;
     background-color: base.$tapped;
