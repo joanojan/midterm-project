@@ -195,6 +195,7 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    margin: 4rem;
   }
   #hero-section #hero-section-container #hero-article #hero-article-paragraph {
     max-width: 90%;
@@ -208,7 +209,7 @@ body {
   #hero-section #hero-section-container #hero-article #hero-article-contact-links {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 4rem;
   }
   #hero-section #hero-section-container #hero-article #hero-article-contact-links #hero-article-button {
     text-decoration: none;

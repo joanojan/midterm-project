@@ -129,6 +129,7 @@
         #hero-article-title {
           @include base.heading(base.$hThree);
           text-align: center;
+          margin: 4rem;
         }
         #hero-article-paragraph {
           max-width: 90%;
@@ -140,7 +141,7 @@
         #hero-article-contact-links {
           display: flex;
           justify-content: center;
-          margin-top: 4rem;
+          margin: 4rem;
 
           #hero-article-button {
             @include base.font-header-link;
