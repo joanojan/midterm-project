@@ -24,12 +24,14 @@ function removeSpaces(...words) {
 }
 
 function validateEmail(mail) {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) return true;
+  const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (regex.test(mail)) return true;
   return false;
 }
 
-function validatePhone(phone) {
-  if (/[0-9]{3}-[0-9]{3}-[0-9]{3}/.test(phone)) return true;
+function validatePhone(phone) {ç
+  const regex = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/;
+  if (regex.test(phone)) return true;
   return false;
 }
 
