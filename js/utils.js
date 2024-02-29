@@ -29,7 +29,7 @@ function validateEmail(mail) {
   return false;
 }
 
-function validatePhone(phone) {ç
+function validatePhone(phone) {
   const regex = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/;
   if (regex.test(phone)) return true;
   return false;

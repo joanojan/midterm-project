@@ -35,17 +35,19 @@ $(".form").on("submit", function (event) {
     $(".valid-email").text("Validated...").show();
   }
 
-  //validate the phone number again
-  if (!validatePhone(phone)) {
-    $(".valid-phone").text("Not valid!").show().fadeOut(7000);
-    allValid = false;
-  } else {
-    $(".valid-phone").text("Validates...").show();
+  //validate the phone number if the field is not empty
+  if(phone) {
+    if (!validatePhone(phone)) {
+      $(".valid-phone").text("Not valid!").show().fadeOut(7000);
+      allValid = false;
+    } else {
+      $(".valid-phone").text("Validates...").show();
+    }
   }
 
   if (!allValid) {
     event.preventDefault();
   } else {
-    alert("Succes!");
+    alert("Thanks for contacting us!");
   }
 });
