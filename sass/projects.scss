@@ -1,6 +1,6 @@
 @use "base";
 
-//desktop
+//common css 
 @media only screen and (min-width: base.$laptop) {
   .projects,
   .services {
@@ -79,7 +79,7 @@
   }
 }
 
-//mobile and tablet
+//mobile AND tablet *****************************************
 @media only screen and (max-width: base.$laptop) {
   .projects,
   .services {

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -21,9 +26,12 @@
     <h1 class="contact-us">Contact Us</h1>
 
     <!--form-->
-    <form class="form" onsubmit="alert('Thanks for contacting us!')">
+    <form class="form">
       <div class="form-row">
-        <label class="form-label" for="name">Full Name *</label>
+        <label class="form-label" for="name" autocomplete="name"
+          >Full Name (required)</label
+        >
+        <div class="valid valid-name"></div>
         <input
           required
           minlength="2"
@@ -37,7 +45,10 @@
       </div>
       <div class="form-column">
         <div class="form-field-column">
-          <label class="form-label" for="email">Email</label>
+          <label class="form-label" for="email" autocomplete="email"
+            >Email (required)</label
+          >
+          <div class="valid valid-email"></div>
           <input
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             class="form-input"
@@ -48,9 +59,10 @@
           />
         </div>
         <div class="form-field-column">
-          <label for="phone" class="form-label">Phone</label>
+          <label for="phone" class="form-label">Phone (123-456-789)</label>
+          <div class="valid valid-phone"></div>
           <input
-            pattern="[0-9]{9}"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
             type="tel"
             id="phone"
             placeholder="Enter your phone number"
@@ -59,17 +71,20 @@
         </div>
       </div>
       <div class="form-row">
-        <label class="form-label" for="message">Message</label>
+        <label class="form-label" for="message" autocomplete="on">
+          Message (required, minlength=10)
+        </label>
+        <div class="valid valid-message"></div>
         <textarea
-          maxlength="1000"
-          class="form-input"
-          name="message"
           id="message"
-          cols="30"
+          name="message"
+          class="form-input"
           rows="10"
-        >
-          Write your message here ....
-        </textarea>
+          cols="30"
+          placeholder="Write your message here..."
+          minlength="10"
+          maxlength="1000"
+        ></textarea>
       </div>
       <input class="contact-form-submit" type="submit" value="Submit" />
     </form>
@@ -79,5 +94,6 @@
 
     <!--scripts-->
     <script src="./js/common.js" type="module"></script>
+    <script src="./js/contact.js" type="module"></script>
   </body>
 </html>

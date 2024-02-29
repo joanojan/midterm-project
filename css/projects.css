@@ -108,6 +108,7 @@ body {
   .projects .projects-container .projects-ul .project-text .project-subject,
   .services .projects-container .projects-ul .project-text .project-subject {
     margin: 0 0 5.4rem 3rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -116,6 +117,7 @@ body {
   .projects .projects-container .projects-ul .project-text .project-learn-more,
   .services .projects-container .projects-ul .project-text .project-learn-more {
     margin: 0 0 3rem 3rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #072ac8;
     line-height: 150%;
@@ -195,6 +197,7 @@ body {
   .projects .projects-container .projects-ul .project-text .project-subject,
   .services .projects-container .projects-ul .project-text .project-subject {
     margin: 0 0 5.4rem 3rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #6b708d;
     line-height: 150%;
@@ -203,6 +206,7 @@ body {
   .projects .projects-container .projects-ul .project-text .project-learn-more,
   .services .projects-container .projects-ul .project-text .project-learn-more {
     margin: 0 0 3rem 3rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #072ac8;
     line-height: 150%;

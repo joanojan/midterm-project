@@ -66,6 +66,7 @@ body {
     margin-bottom: 2rem;
   }
   .cta .cta-content .cta-p {
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: #292e47;
     line-height: 150%;
@@ -87,6 +88,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 3rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #292e47;
     line-height: 150%;
@@ -94,6 +96,7 @@ body {
     margin-right: 2rem;
   }
   .cta .cta-content .cta-form .cta-submit {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #ffc600;
     line-height: 150%;
@@ -142,6 +145,7 @@ body {
     text-align: center;
   }
   .cta .cta-content .cta-p {
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: #292e47;
     line-height: 150%;
@@ -162,6 +166,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 1.6rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #292e47;
     line-height: 150%;
@@ -169,6 +174,7 @@ body {
     margin-right: 1rem;
   }
   .cta .cta-content .cta-form .cta-submit {
+    font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
     color: #ffc600;
     line-height: 150%;
