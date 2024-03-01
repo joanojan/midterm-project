@@ -64,7 +64,7 @@
     display: block;
     grid-row: 2;
     width: 4rem;
-    min-height: 3rem;
+    height: 3rem;
     justify-self: end;
     margin-right: 3rem;
   }
@@ -93,6 +93,7 @@
         width: 90%;
         height: auto;
         background-color: base.$dark;
+        opacity: .7;
         display: none;
         position: fixed;
         top: 7rem;

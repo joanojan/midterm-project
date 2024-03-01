@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/contact.css" />
     <title>Contact page</title>
   </head>
+  
   <body>
     <!--navbar-->
     <div id="nav-container"></div>
@@ -31,63 +32,54 @@
     <!--form-->
     <form class="form">
       <div class="form-row">
-        <label class="form-label" for="name" autocomplete="name"
-          >Full Name (required)</label
-        >
-        <div class="valid valid-name"></div>
+        <label class="form-label" for="name"> Full Name (required) </label>
         <input
-          required
-          minlength="2"
-          maxlength="50"
           class="form-input"
           type="text"
           id="name"
           name="name"
           placeholder="Enter your full name"
         />
+        <div class="error-message error-message-name"></div>
       </div>
       <div class="form-column">
         <div class="form-field-column">
-          <label class="form-label" for="email" autocomplete="email"
-            >Email (required)</label
-          >
-          <div class="valid valid-email"></div>
+          <label class="form-label" for="email" autocomplete="email">
+            Email (required)
+          </label>
           <input
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             class="form-input"
-            type="email"
+            type="text"
             id="email"
             name="email"
             placeholder="Enter your email address"
           />
+          <div class="error-message error-message-email"></div>
         </div>
         <div class="form-field-column">
           <label for="phone" class="form-label">Phone (123-456-789)</label>
-          <div class="valid valid-phone"></div>
           <input
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
             type="tel"
             id="phone"
             placeholder="Enter your phone number"
             class="form-input"
           />
+          <div class="error-message error-message-phone"></div>
         </div>
       </div>
       <div class="form-row">
         <label class="form-label" for="message" autocomplete="on">
           Message (required, minlength=10)
         </label>
-        <div class="valid valid-message"></div>
         <textarea
           id="message"
           name="message"
           class="form-input"
           rows="10"
-          cols="30"
+          cols="20"
           placeholder="Write your message here..."
-          minlength="10"
-          maxlength="1000"
         ></textarea>
+        <div class="error-message error-message-message"></div>
       </div>
       <input class="contact-form-submit" type="submit" value="Submit" />
     </form>
