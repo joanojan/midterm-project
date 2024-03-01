@@ -1,4 +1,10 @@
-import { removeSpaces, validateEmail, validatePhone } from "./utils.js";
+import {
+  removeSpaces,
+  validateName,
+  validateEmail,
+  validatePhone,
+  validateMessage,
+} from "./utils.js";
 
 /**
  *
@@ -7,47 +13,62 @@ import { removeSpaces, validateEmail, validatePhone } from "./utils.js";
  */
 
 $(".form").on("submit", function (event) {
-  event.preventDefault();
-
-  const email = $("#email").first().val();
-  const message = $("#message").first().val();
   const name = $("#name").first().val();
+  const email = $("#email").first().val();
   const phone = $("#phone").first().val();
+  const message = $("#message").first().val();
 
-  let nameTrim, messageTrim;
-  [nameTrim, messageTrim] = removeSpaces(name, message);
+  let nameTrim, emailTrim, phoneTrim, messageTrim;
+  [nameTrim, emailTrim, phoneTrim, messageTrim] = removeSpaces(
+    name,
+    email,
+    phone,
+    message
+  );
 
   let allValid = true;
 
-  //check for empty string
-  if (!name) {
-    $(".valid-name").text("Not valid!").show().fadeOut(7000);
-    allValid = false;
+  if (validateName(nameTrim)) {
+    $(".error-message-name").text("ok");
   } else {
-    $(".valid-name").text("Validated...").show();
-  }
-  
-  //email was already validated in the css. Here we do it again.
-  if (!validateEmail(email)){
-    $(".valid-email").text("Not valid!").show().fadeOut(7000);
+    $(".error-message-name").text("Name is required field");
     allValid = false;
-  } else {
-    $(".valid-email").text("Validated...").show();
   }
 
-  //validate the phone number if the field is not empty
-  if(phone) {
-    if (!validatePhone(phone)) {
-      $(".valid-phone").text("Not valid!").show().fadeOut(7000);
-      allValid = false;
+  if (validateEmail(emailTrim)) {
+    $(".error-message-email").text("ok");
+  } else {
+    if (!emailTrim) {
+      $(".error-message-email").text("The email is required");
     } else {
-      $(".valid-phone").text("Validates...").show();
+      $(".error-message-email").text("Not valid");
     }
+    allValid = false;
+  }
+
+  if (validatePhone(phoneTrim)) {
+    $(".error-message-phone").text("ok");
+  } else {
+    if(phoneTrim){
+      $(".error-message-phone").text("Format should match 111-222-333");
+      allValid = false;
+    }
+  }
+
+  if (validateMessage(messageTrim)) {
+    $(".error-message-message").text("ok");
+  } else {
+    if (!messageTrim) {
+      $(".error-message-message").text("Message is required");
+    } else {
+      $(".error-message-message").text("minimum 10 letters");
+    }
+    allValid = false;
   }
 
   if (!allValid) {
     event.preventDefault();
   } else {
-    alert("Thanks for contacting us!");
+    alert("Thanks for contacting us!")
   }
 });
